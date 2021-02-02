@@ -57,7 +57,7 @@
                 </li>
                 <li>
                     <a href="#sidebarUserManagement" data-toggle="collapse">
-                        <i data-feather="airplay"></i>
+                        <i data-feather="users"></i>
                         <span> User Management </span>
                         <span class="menu-arrow"></span>
                     </a>

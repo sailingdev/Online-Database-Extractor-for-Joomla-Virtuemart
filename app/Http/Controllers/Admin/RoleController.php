@@ -1,12 +1,13 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use Spatie\Permission\Models\Permission;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 use Yajra\DataTables\DataTables;
 
-class PermissionController extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,18 +16,29 @@ class PermissionController extends Controller
      */
     public function index()
     {
-        $permissions = Permission::all();
-        if (request()->ajax()) {
-            return Datatables::of($permissions)
+        $roles = Role::with(['permissions' => function($permission){
+            $permission->select('id', 'name')->latest();
+        }])->select(['id','name'])->get();
+//        dd($roles[0]->permissions);
+        if (request()->ajax()){
+            return Datatables::of($roles)
                 ->addIndexColumn()
+                ->addColumn('permissions', function ($row) {
+                    $btn = '';
+                    foreach ($row->permissions as $val){
+                        $btn .= '<span class="badge label-table badge-primary mr-1 ">'.$val->name.'</span>';
+                    }
+                    return $btn;
+                })
                 ->addColumn('action', function ($row) {
                     $btn = '<a href="" class="edit btn btn-warning btn-sm mr-1">Edit</a>';
                     $btn .= '<a href="" class="remove btn btn-danger btn-sm ">Delete</a>';
                     return $btn;
                 })
+                ->escapeColumns([])
                 ->make(true);
         }
-        return view('admin.permissions.index');
+        return view('admin.roles.index');
     }
 
     /**

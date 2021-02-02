@@ -19,18 +19,20 @@ class UserSeeder extends Seeder
         app()[PermissionRegistrar::class]->forgetCachedPermissions();
 
         // create permissions
-        Permission::create(['name' => 'manage user']);
-        Permission::create(['name' => 'manage role_permission']);
-        Permission::create(['name' => 'extract db']);
+        Permission::create(['name' => 'user_manage']);
+        Permission::create(['name' => 'role_manage']);
+        Permission::create(['name' => 'permission_manage']);
+        Permission::create(['name' => 'db_manage']);
 
         // create roles and assign existing permissions
         $role1 = Role::create(['name' => 'admin']);
-        $role1->givePermissionTo('manage user');
-        $role1->givePermissionTo('manage role_permission');
-        $role1->givePermissionTo('extract db');
+        $role1->givePermissionTo('user_manage');
+        $role1->givePermissionTo('role_manage');
+        $role1->givePermissionTo('permission_manage');
+        $role1->givePermissionTo('db_manage');
 
         $role2 = Role::create(['name' => 'user']);
-        $role2->givePermissionTo('extract db');
+        $role2->givePermissionTo('db_manage');
 
         // crate super-admin and assign existing super-admin role
         $admin = User::create([

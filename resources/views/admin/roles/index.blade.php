@@ -1,4 +1,4 @@
-@extends('layouts.vertical', ['title' => 'Permissions'])
+@extends('layouts.vertical', ['title' => 'Roles'])
 
 @section('css')
     <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="page-title-box">
-                    <h4 class="page-title">Permissions</h4>
+                    <h4 class="page-title">Roles</h4>
                 </div>
             </div>
         </div>
@@ -24,11 +24,12 @@
                     <div class="table-responsive">
                         <table id="dataTable" class="table table-bordered table-striped">
                             <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Name</th>
-                                    <th>Action</th>
-                                </tr>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Permissions</th>
+                                <th>Action</th>
+                            </tr>
                             </thead>
                             <tbody>
                             </tbody>
@@ -48,12 +49,13 @@
             'processing': true,
             'serverSide': true,
             'ajax': {
-                'url': "{{ url('permissions') }}",
+                'url': "{{ url('roles') }}",
                 'type': 'GET'
             },
             'columns': [
                 {'data': 'id'},
                 {'data': 'name'},
+                {'data': 'permissions'},
                 {'data': 'action', orderable: false, searchable: false},
             ],
         });
