@@ -32,12 +32,20 @@ class UserSeeder extends Seeder
         $role2 = Role::create(['name' => 'user']);
         $role2->givePermissionTo('extract db');
 
-        // crate super-admin and assign existing role
-        $user = User::create([
+        // crate super-admin and assign existing super-admin role
+        $admin = User::create([
             'name' => 'Admin',
             'email' => 'admin@admin.com',
             'password' => bcrypt('admin123!@#')
         ]);
-        $user->assignRole($role1);
+        $admin->assignRole($role1);
+
+        // create user and assign existing user role
+        $user = User::create([
+            'name' => 'customer',
+            'email' => 'customer@admin.com',
+            'password' => bcrypt('admin123!@#')
+        ]);
+        $user->assignRole($role2);
     }
 }
