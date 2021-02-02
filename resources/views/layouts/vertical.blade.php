@@ -3,7 +3,7 @@
 
     <head>
         @include('layouts.shared/title-meta', ['title' => $title])
-        @include('layouts.shared/head-css')
+        @include('layouts.shared/head-css', ["demo" => "purple"])
         {{-- @include('layouts.shared/head-css', ["demo" => "modern"]) --}}
     </head>
 
@@ -19,7 +19,7 @@
             <!-- ============================================================== -->
 
             <div class="content-page">
-                <div class="content">                    
+                <div class="content">
                     @yield('content')
                 </div>
                 <!-- content -->
@@ -38,6 +38,6 @@
         @include('layouts.shared/right-sidebar')
 
         @include('layouts.shared/footer-script')
-        
+
     </body>
 </html>

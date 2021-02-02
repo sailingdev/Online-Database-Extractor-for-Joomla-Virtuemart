@@ -18,10 +18,5 @@ Auth::routes();
 
 
 Route::group(['middleware' => 'auth', 'prefix' => '/'], function () {
-    Route::get('{first}/{second}/{third}', 'RoutingController@thirdLevel')->name('third');
-    Route::get('{first}/{second}', 'RoutingController@secondLevel')->name('second');
-    Route::get('{any}', 'RoutingController@root')->name('any');
+    Route::get('', 'HomeController@index')->name('index');
 });
-
-// landing
-Route::get('', 'RoutingController@index')->name('index');

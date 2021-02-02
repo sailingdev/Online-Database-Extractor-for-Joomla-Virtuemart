@@ -15,7 +15,7 @@
                         <div class="card bg-pattern">
 
                             <div class="card-body p-4">
-                                
+
                                 <div class="text-center w-75 m-auto">
                                     <div class="auth-logo">
                                         <a href="{{route('index')}}" class="logo logo-dark text-center">
@@ -23,7 +23,7 @@
                                                 <img src="{{asset('assets/images/logo-dark.png')}}" alt="" height="22">
                                             </span>
                                         </a>
-                    
+
                                         <a href="{{route('index')}}" class="logo logo-light text-center">
                                             <span class="logo-lg">
                                                 <img src="{{asset('assets/images/logo-light.png')}}" alt="" height="22">
@@ -38,7 +38,7 @@
 
                                     <div class="form-group mb-3">
                                         <label for="emailaddress">Email address</label>
-                                        <input class="form-control  @if($errors->has('email')) is-invalid @endif" name="email" type="email" 
+                                        <input class="form-control  @if($errors->has('email')) is-invalid @endif" name="email" type="email"
                                             id="emailaddress" required=""
                                             value="{{ old('email')}}"
                                             placeholder="Enter your email" />
@@ -107,7 +107,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12 text-center">
-                                <p> <a href="{{route('second', ['auth', 'recoverpw-2'])}}" class="text-white-50 ml-1">Forgot your password?</a></p>
+                                <p> <a href="{{route('login')}}" class="text-white-50 ml-1">Forgot your password?</a></p>
                                 <p class="text-white-50">Don't have an account? <a href="{{route('register')}}" class="text-white ml-1"><b>Sign Up</b></a></p>
                             </div> <!-- end col -->
                         </div>
@@ -123,10 +123,10 @@
 
 
         <footer class="footer footer-alt">
-            <script>document.write(new Date().getFullYear())</script> &copy; UBold theme by <a href="" class="text-white-50">Coderthemes</a> 
+            <script>document.write(new Date().getFullYear())</script> &copy; UBold theme by <a href="" class="text-white-50">Coderthemes</a>
         </footer>
 
         @include('layouts.shared.footer-script')
-        
+
     </body>
 </html>
