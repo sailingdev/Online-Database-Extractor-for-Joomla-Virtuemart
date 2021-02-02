@@ -1,0 +1,232 @@
+// 
+// plugins-rtl.scss
+//
+
+
+// Nestable-list
+
+.dd-item {
+    >button {
+        float: right;
+    }
+
+    .dd-list {
+        padding-right: 30px;
+        padding-left: 0;
+    }
+}
+
+.dd-list {
+    .dd3-handle {
+        float: right;
+    }
+}
+
+
+// Select 2
+
+.select2-container {
+    .select2-selection--single {
+        .select2-selection__rendered {
+            padding-right: 12px;
+        }
+
+        .select2-selection__arrow {
+            left: 3px;
+            right: auto;
+        }
+    }
+
+    .select2-selection--multiple {
+        .select2-selection__choice {
+            float: right;
+            margin-left: 5px;
+            margin-right: 0;
+        }
+    }
+
+    .select2-search--inline {
+        float: right;
+    }
+}
+
+
+// Multiple select
+
+.ms-container {
+    .ms-optgroup-label {
+        padding: 5px 5px 0px 0;
+    }
+}
+
+
+// Bootstrap select
+
+.bootstrap-select {
+    .dropdown-toggle {
+        &:before {
+            float: left;
+        }
+
+        .filter-option {
+            text-align: right;
+        }
+
+        .filter-option-inner {
+            padding-right: 0;
+            padding-left: inherit;
+        }
+    }
+}
+
+
+// Parsley
+
+.parsley-errors-list {
+    >li {
+        padding-left: 0;
+        padding-right: 20px;
+
+        &:before {
+            left: auto;
+            right: 2px;
+        }
+    }
+}
+
+
+// Quilljs
+
+.ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+    left: 0;
+    right: auto;
+}
+
+.ql-editor {
+    direction: rtl;
+    text-align: right;
+}
+
+
+// X-ediatable 
+
+.editable-buttons {
+    margin-left: 0;
+    margin-right: 7px;
+
+    .editable-cancel {
+        margin-left: 0;
+        margin-right: 7px;
+    }
+}
+
+
+// Foo table
+
+.footable.breakpoint>tbody>tr>td>span.footable-toggle {
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+// Datatables
+div.dataTables_wrapper div.dataTables_filter {
+    float: left;
+
+    input {
+        margin: 0 5px 0 0;
+    }
+}
+
+// Bootstrap select
+
+.bootstrap-select {
+    .dropdown-toggle {
+        &:after {
+            padding-left: 0;
+            padding-right: 10px;
+        }
+    }
+}
+
+// responsive-table
+
+.responsive-table-plugin {
+    .checkbox-row {
+        padding-right: 40px;
+        padding-left: 0;
+
+        label {
+            padding-right: 15px;
+            padding-left: 0;
+
+            &::before {
+                right: 0;
+                left: auto;
+                margin-left: 0;
+                margin-right: -10px;
+            }
+
+            &::after {
+                left: auto;
+                right: 0;
+                margin-left: 0;
+                margin-right: -9px;
+                padding-right: 3px;
+            }
+        }
+
+    }
+
+    .btn-group {
+        &.pull-right {
+            float: left;
+
+            .dropdown-menu {
+                left: 0;
+                right: auto;
+            }
+        }
+    }
+}
+
+
+// FooTable
+
+.footable{
+    > thead{
+        > tr{
+            > th{
+                > span.footable-sort-indicator {
+                    padding-right: 5px;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+//bootstrap Tables
+
+.bootstrap-table {
+    .fixed-table-toolbar {
+        .columns-right {
+            margin-left: 0;
+            margin-right: 5px;
+        }
+    }
+}
+
+// Tablesaw
+.tablesaw {
+    th,
+    td {
+        text-align: right !important;
+    }
+}
+
+.tablesaw-swipe {
+    .tablesaw-swipe-cellpersist {
+        border-left: 2px solid $table-head-bg;
+        border-right: none;
+    }
+}

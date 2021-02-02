@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>UBold - Responsive Admin Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Topbar Start -->
+                <div class="navbar-custom">
+                    <a href="index.html" class="logo text-center d-none d-md-inline-block mr-2">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="16">
+                        </span>
+                        <span class="badge badge-primary ml-3 font-18">Laravel</span>
+                    </a>
+
+                    <button type="button" class="btn btn-sm btn-dark d-inline-block d-lg-none button-menu-mobile">Menu</button>
+    
+                    <span class="badge badge-danger float-right">v1.0.0</span>
+                </div>
+                <!-- end Topbar -->
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <div class="page-wrapper">
+                        <div class="left-sidebar">
+                            <div class="slimscroll-menu">
+                                <div class="list-group list-group-transparent mb-0">
+
+                                    <span class="list-group-item disabled">
+                                        Getting Started
+                                    </span>
+
+                                    <a href="index.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-flag-variant-outline"></i>
+                                        </span>Introduction
+                                    </a>
+
+                                    <a href="setup.html" class="list-group-item list-group-item-action active">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-apps"></i>
+                                        </span>Setup
+                                    </a>
+
+                                    <span class="list-group-item disabled">
+                                        Customization
+                                    </span>
+
+                                    <a href="customization.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-square-edit-outline"></i>
+                                        </span>Layout & Themes
+                                    </a>
+
+
+                                    <span class="list-group-item disabled">
+                                        Other
+                                    </span>
+
+                                    <a href="plugins-uses.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-widgets"></i>
+                                        </span>How to use plugins
+                                    </a>
+
+                                    <a href="changelog.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-book-open-page-variant"></i>
+                                        </span>Changelog
+                                    </a>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end left-sidebar-->
+
+                        <div class="page-content">
+                            <div class="card ">
+                                <div class="card-body">
+
+                                    <h4 class="mt-0 mb-2 font-weight-bold">Set up the Development Environment</h4>
+
+                                    <p class="mt-3">
+                                        The Laravel framework has a few system requirements. Of course, all of these
+                                        requirements are satisfied by the <a
+                                            href="https://laravel.com/docs/7.x/homestead" target="_blank">Laravel
+                                            Homestead</a> virtual machine, so it's highly recommended that you use
+                                        Homestead as your local Laravel development environment.
+                                    </p>
+                                    <p>
+                                        However, if you are not using Homestead, you will need to make sure your server
+                                        meets the following requirements:
+                                    </p>
+
+                                    <ul class="mt-3">
+                                        <li><a href="https://www.php.net/">PHP</a> &gt;= 7.2.5</li>
+                                        <li>BCMath PHP Extension</li>
+                                        <li>Ctype PHP Extension</li>
+                                        <li>Fileinfo PHP extension</li>
+                                        <li>JSON PHP Extension</li>
+                                        <li>Mbstring PHP Extension</li>
+                                        <li>OpenSSL PHP Extension</li>
+                                        <li>PDO PHP Extension</li>
+                                        <li>Tokenizer PHP Extension</li>
+                                        <li>XML PHP Extension</li>
+                                    </ul>
+
+                                    <hr />
+
+                                    <h4 class="mt-0 mb-2 font-weight-medium">Installation</h4>
+                                    <p class="mb-1">
+                                        1. Open up command prompt and navigate to the ubold folder (where you have
+                                        extracted the folder). E.g.
+                                    </p>
+                                    <p class="bg-light p-2">
+                                        <code>cd ubold-laravel/ubold</code>
+                                    </p>
+
+                                    <p class="mb-1">
+                                        2. Next, run the following commands to install all dependencies
+                                    </p>
+                                    <p class="bg-light p-2">
+                                        <code>composer install</code>
+                                    </p>
+                                    <p class="bg-light p-2">
+                                        <code>npm install</code>
+                                    </p>
+
+                                    <p>3. Now rename the .env.example to .env and modify the values for database in it
+                                        as per your local environment</p>
+
+                                    <p class="mb-1">
+                                        4. Run the following command to generate the key
+                                    </p>
+                                    <p class="bg-light p-2">
+                                        <code>php artisan key:generate</code>
+                                    </p>
+
+                                    <p class="mb-1">5. Run the following command to run database migration to create
+                                        tables</p>
+                                    <p class="bg-light p-2">
+                                        <code>php artisan migrate</code>
+                                    </p>
+
+                                    <p class="mb-1">6. Run the following command to compile all assets</p>
+                                    <p class="bg-light p-2">
+                                        <code>npm run dev</code>
+                                    </p>
+
+                                    <p class="mb-1">7. And Done, now you are ready to start development server</p>
+                                    <p class="bg-light p-2 mb-1">
+                                        <code>php artisan server</code>
+                                    </p>
+                                    <p>Open <a href="http://127.0.0.1:8000" target="_blank">http://127.0.0.1:8000</a> to
+                                        see it live there.</p>
+
+                                    <p class="mb-1 mt-4">Note following commands around the compilation of assets</p>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Command</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><code>npm run watch</code></td>
+                                                    <td>For watch files and compiles assets on the fly (also auto
+                                                        reloads browser).</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>npm run dev</code></td>
+                                                    <td>For compile assets.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>npm run prod</code></td>
+                                                    <td>For compile and prepare assets for production.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <p><i>You can review official laravel documentation for additional configuration and options: <a href="https://laravel.com/docs/7.x" target="_blank">Laravel Documentation</a></i></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end page-wrapper-->
+                    </div>
+
+                </div>
+                <!-- content -->
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                2015 - 2019 © UBold - by Coderthemes
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-right footer-links d-none d-sm-block">
+                                    <a href="http://coderthemes.com/" target="_blank">About</a>
+                                    <a href="http://coderthemes.com/#contact" target="_blank">Support</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- END wrapper -->
+
+        <script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>

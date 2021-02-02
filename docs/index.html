@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>UBold - Responsive Admin Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Topbar Start -->
+                <div class="navbar-custom">
+                    <a href="index.html" class="logo text-center d-none d-md-inline-block mr-2">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="16">
+                        </span>
+                        <span class="badge badge-primary ml-3 font-18">Laravel</span>
+                    </a>
+
+                    <button type="button" class="btn btn-sm btn-dark d-inline-block d-lg-none button-menu-mobile">Menu</button>
+    
+                    <span class="badge badge-danger float-right">v1.0.0</span>
+                </div>
+                <!-- end Topbar -->
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+                    
+                    <div class="page-wrapper">
+                        <div class="left-sidebar">
+                            <div class="slimscroll-menu">
+                                <div class="list-group list-group-transparent mb-0">
+
+                                    <span class="list-group-item disabled">
+                                        Getting Started
+                                    </span>
+
+                                    <a href="index.html" class="list-group-item list-group-item-action active">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-flag-variant-outline"></i>
+                                        </span>Introduction
+                                    </a>
+
+                                    <a href="setup.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-apps"></i>
+                                        </span>Setup
+                                    </a>
+
+                                    <span class="list-group-item disabled">
+                                        Customization
+                                    </span>
+
+                                    <a href="customization.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-square-edit-outline"></i>
+                                        </span>Layout & Themes
+                                    </a>
+
+
+                                    <span class="list-group-item disabled">
+                                        Other
+                                    </span>
+
+                                    <a href="plugins-uses.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-widgets"></i>
+                                        </span>How to use plugins
+                                    </a>
+
+                                    <a href="changelog.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-book-open-page-variant"></i>
+                                        </span>Changelog
+                                    </a>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end left-sidebar-->
+
+                        <div class="page-content">
+                            <div class="card">
+                                    <div class="card-body">
+
+                                        <h4 class="mt-0 mb-2 font-weight-semibold">Introduction</h4>
+
+                                        <p>Ubold Laravel is a fully featured premium admin template built on top of
+                                            awesome <strong class="text-danger">Bootstrap 4.4.5</strong> and Laravel 7. Laravel is a web application framework with expressive, elegant syntax.
+                                        
+                                            It comes with a strong collection of tools and provides application architecture
+                                            It's crafted using modern web technologies <strong class="text-danger">PHP (Laravel 7), HTML5, CSS3 </strong>and <strong class="text-danger">jQuery</strong>. 
+                                            The theme includes beautiful dashboard, many ready to use hand crafted components,
+                                            widgets, pages, etc. The components can be used very easily on any
+                                            page. The theme is fully responsive and customizable.</p>
+
+                                        <p>It's a powerful and super flexible, which suits best for web
+                                            applications including CRM, CMS, Admin Panels, Dashboards, etc. It
+                                            is fully responsive, which means that it looks perfect on mobiles
+                                            and tablets. Also, we tried to implement this by keeping the concept
+                                            of modularity in mind, this enables you to reduce the development
+                                            time and cost.</p>
+
+                                        <p>This documentation is guidelines for all users who can even be a
+                                            beginner or experienced web developer.</p>
+
+                                        <p>We really care for our buyers and so in case if you are having any
+                                            question or feedback, please feel free to get back to us via email
+                                            <code>support@coderthemes.com</code> or by filling out the contact
+                                            form on our <a href="http://coderthemes.com/#contact"
+                                                target="_blank">website</a>.</p>
+                                    </div>
+                            </div>
+                            <div class="card m-b-30">
+                                <div class="card-body">
+
+                                            <h4 class="mt-0 mb-2 font-weight-semibold">Structure</h4>
+    
+                                            <p>Extract the zip file you received after purchase and you would find the exact below
+                                                files and folders:
+                                            </p>
+    
+                                            <pre>
+
+├── docs
+└── ubold
+│   ├── app
+│   ├── bootstrap
+│   ├── composer.json - Laravel php dependencies
+│   ├── config
+│   ├── database
+│   ├── public
+│   ├── resources/
+│   │   └── data
+│   │   └── fonts
+│   │   └── images
+│   │   └── js
+│   │   └── lang
+│   │   └── scss
+│   │   └── views
+│   │       └── layout
+│   │       └── multiple folders having all pages, apps, etc
+│   ├── routes
+│   ├── storage
+│   ├── tests
+│   ├── webpack.mix.js - a webpack mix config file
+│   ├── package.json
+│   └── package-lock.json
+                                                </pre>
+                                        
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    
+                                    
+                                            <h4 class="mt-0 mb-2 font-weight-semibold">Credits/Plugins</h4>
+                                            <p>
+                                                Here is the list of plugin with the official documentation. Ubold won't be easy to build without using them and we are thankful to them.
+                                            </p>
+    
+                                            <div class="table-responsive">
+                                                <table class="table table-sm mb-0 font-14">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="font-weight-semibold">Plugins</th>
+                                                            <th class="font-weight-semibold">Url</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Bootstrap</td>
+                                                            <td><a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>jQuery</td>
+                                                            <td><a href="https://jquery.com/" target="_blank">https://jquery.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Animate</td>
+                                                            <td><a href="https://daneden.github.io/animate.css/" target="_blank">https://daneden.github.io/animate.css/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Autocomplete</td>
+                                                            <td><a href="https://github.com/devbridge/jQuery-Autocomplete" target="_blank">https://github.com/devbridge/jQuery-Autocomplete</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Autonumeric</td>
+                                                            <td><a href="https://github.com/autoNumeric/autoNumeric" target="_blank">https://github.com/autoNumeric/autoNumeric</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap-colorpicker</td>
+                                                            <td><a href="https://farbelous.io/bootstrap-colorpicker/" target="_blank">https://farbelous.io/bootstrap-colorpicker/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap Maxlength</td>
+                                                            <td><a href="https://mimo84.github.io/bootstrap-maxlength/" target="_blank">https://mimo84.github.io/bootstrap-maxlength/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap-select</td>
+                                                            <td><a href="https://developer.snapappointments.com/bootstrap-select/" target="_blank">https://developer.snapappointments.com/bootstrap-select/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap-table</td>
+                                                            <td><a href="https://github.com/wenzhixin/bootstrap-table" target="_blank">https://github.com/wenzhixin/bootstrap-table</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap Touchspin</td>
+                                                            <td><a href="https://github.com/istvan-ujjmeszaros/bootstrap-touchspin" target="_blank">https://github.com/istvan-ujjmeszaros/bootstrap-touchspin</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Cerebri Sans font</td>
+                                                            <td><a href="https://creativemarket.com/hankendesign/1284196-Cerebri-Sans?u=coderthemes" target="_blank">https://creativemarket.com/hankendesign/1284196-Cerebri-Sans</a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>C3</td>
+                                                            <td><a href="https://c3js.org/" target="_blank">https://c3js.org/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Chartist</td>
+                                                            <td><a href="https://gionkunz.github.io/chartist-js/" target="_blank">https://gionkunz.github.io/chartist-js/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Chart-js</td>
+                                                            <td><a href="https://www.chartjs.org/" target="_blank">https://www.chartjs.org/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Clockpicker</td>
+                                                            <td><a href="http://weareoutman.github.io/clockpicker/" target="_blank">http://weareoutman.github.io/clockpicker/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Cropper</td>
+                                                            <td><a href="https://github.com/fengyuanchen/cropper" target="_blank">https://github.com/fengyuanchen/cropper</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>D3</td>
+                                                            <td><a href="https://d3js.org/" target="_blank">https://d3js.org/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Datatables</td>
+                                                            <td><a href="https://datatables.net/" target="_blank">https://datatables.net/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dropify</td>
+                                                            <td><a href="http://jeremyfagis.github.io/dropify/" target="_blank">http://jeremyfagis.github.io/dropify/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dropzone</td>
+                                                            <td><a href="https://www.dropzonejs.com/" target="_blank">https://www.dropzonejs.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Flatpickr</td>
+                                                            <td><a href="https://flatpickr.js.org/" target="_blank">https://flatpickr.js.org/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Flot-charts</td>
+                                                            <td><a href="https://www.flotcharts.org/" target="_blank">https://www.flotcharts.org/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Footable</td>
+                                                            <td><a href="https://fooplugins.github.io/FooTable/" target="_blank">https://fooplugins.github.io/FooTable/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Fullcalendar</td>
+                                                            <td><a href="https://fullcalendar.io/" target="_blank">https://fullcalendar.io/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Gmaps</td>
+                                                            <td><a href="https://hpneo.github.io/gmaps/examples.html" target="_blank">https://hpneo.github.io/gmaps/examples.html</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Hopscotch</td>
+                                                            <td><a href="https://github.com/linkedin/hopscotch" target="_blank">https://github.com/linkedin/hopscotch</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ion-rangeslider</td>
+                                                            <td><a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" target="_blank">http://ionden.com/a/plugins/ion.rangeSlider/en.html</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery-countdown</td>
+                                                            <td><a href="http://hilios.github.io/jQuery.countdown/" target="_blank">http://hilios.github.io/jQuery.countdown/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery-knob</td>
+                                                            <td><a href="http://anthonyterrien.com/demo/knob/" target="_blank">http://anthonyterrien.com/demo/knob/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery-mapael</td>
+                                                            <td><a href="https://www.vincentbroute.fr/mapael/" target="_blank">https://www.vincentbroute.fr/mapael/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery-mask-plugin</td>
+                                                            <td><a href="https://github.com/igorescobar/jQuery-Mask-Plugin" target="_blank">https://github.com/igorescobar/jQuery-Mask-Plugin</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery-mockjax</td>
+                                                            <td><a href="https://github.com/jakerella/jquery-mockjax" target="_blank">https://github.com/jakerella/jquery-mockjax</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery-nice-select</td>
+                                                            <td><a href="https://hernansartorio.com/jquery-nice-select/" target="_blank">https://hernansartorio.com/jquery-nice-select/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery-scrollto</td>
+                                                            <td><a href="https://github.com/flesler/jquery.scrollTo" target="_blank">https://github.com/flesler/jquery.scrollTo</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery-sparkline</td>
+                                                            <td><a href="https://omnipotent.net/jquery.sparkline/#s-about" target="_blank">https://omnipotent.net/jquery.sparkline/#s-about</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery-tabledit</td>
+                                                            <td><a href="https://markcell.github.io/jquery-tabledit/" target="_blank">https://markcell.github.io/jquery-tabledit/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery-toast</td>
+                                                            <td><a href="https://kamranahmed.info/toast" target="_blank">https://kamranahmed.info/toast</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jquery-vectormap</td>
+                                                            <td><a href="http://jvectormap.com/" target="_blank">http://jvectormap.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jsgrid</td>
+                                                            <td><a href="http://js-grid.com/" target="_blank">http://js-grid.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Justgage</td>
+                                                            <td><a href="https://github.com/toorshia/justgage" target="_blank">https://github.com/toorshia/justgage</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ladda</td>
+                                                            <td><a href="https://github.com/hakimel/Ladda" target="_blank">https://github.com/hakimel/Ladda</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Magnific-popup</td>
+                                                            <td><a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">http://dimsemenov.com/plugins/magnific-popup/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Moment</td>
+                                                            <td><a href="https://momentjs.com/" target="_blank">https://momentjs.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Morris-js</td>
+                                                            <td><a href="http://morrisjs.github.io/morris.js/" target="_blank">http://morrisjs.github.io/morris.js/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Multiselect</td>
+                                                            <td><a href="http://loudev.com/" target="_blank">http://loudev.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Nestable2</td>
+                                                            <td><a href="https://github.com/RamonSmit/Nestable2" target="_blank">https://github.com/RamonSmit/Nestable2</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Parsleyjs</td>
+                                                            <td><a href="http://parsleyjs.org/" target="_blank">http://parsleyjs.org/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Pdfmake</td>
+                                                            <td><a href="http://pdfmake.org/#/" target="_blank">http://pdfmake.org/#/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Peity</td>
+                                                            <td><a href="http://benpickles.github.io/peity/" target="_blank">http://benpickles.github.io/peity/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Quill</td>
+                                                            <td><a href="https://quilljs.com/" target="_blank">https://quilljs.com/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Raphael</td>
+                                                            <td><a href="http://dmitrybaranovskiy.github.io/raphael/" target="_blank">http://dmitrybaranovskiy.github.io/raphael/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rickshaw</td>
+                                                            <td><a href="https://github.com/shutterstock/rickshaw" target="_blank">https://github.com/shutterstock/rickshaw</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rwd-table</td>
+                                                            <td><a href="http://gergeo.se/RWD-Table-Patterns/" target="_blank">http://gergeo.se/RWD-Table-Patterns/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Select2</td>
+                                                            <td><a href="https://select2.org/" target="_blank">https://select2.org/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Summernote</td>
+                                                            <td><a href="https://summernote.org/" target="_blank">https://summernote.org/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sweetalert2</td>
+                                                            <td><a href="https://sweetalert2.github.io/" target="_blank">https://sweetalert2.github.io/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Switchery</td>
+                                                            <td><a href="http://abpetkov.github.io/switchery/" target="_blank">http://abpetkov.github.io/switchery/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Tablesaw</td>
+                                                            <td><a href="https://github.com/filamentgroup/tablesaw" target="_blank">https://github.com/filamentgroup/tablesaw</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Tippy-js</td>
+                                                            <td><a href="https://atomiks.github.io/tippyjs/" target="_blank">https://atomiks.github.io/tippyjs/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>toastr</td>
+                                                            <td><a href="https://github.com/CodeSeven/toastr" target="_blank">https://github.com/CodeSeven/toastr</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Twitter-bootstrap-wizard</td>
+                                                            <td><a href="http://vinceg.github.io/twitter-bootstrap-wizard/" target="_blank">http://vinceg.github.io/twitter-bootstrap-wizard/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>X-editable</td>
+                                                            <td><a href="https://vitalets.github.io/x-editable/" target="_blank">https://vitalets.github.io/x-editable/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bootstrap Datepicker</td>
+                                                            <td><a href="https://uxsolutions.github.io/bootstrap-datepicker/" target="_blank">https://uxsolutions.github.io/bootstrap-datepicker/</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sortable JS</td>
+                                                            <td><a href="https://github.com/SortableJS/Sortable" target="_blank">https://github.com/SortableJS/Sortable</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+                    <!-- end page-wrapper-->
+                </div>
+
+            </div>
+            <!-- content -->
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            2015 - 2019 © UBold - by Coderthemes
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="http://coderthemes.com/" target="_blank">About</a>
+                                <a href="http://coderthemes.com/#contact" target="_blank">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end Footer -->
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- END wrapper -->
+
+    <!-- bundle -->
+    <script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>

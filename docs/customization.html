@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>UBold - Responsive Admin Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Topbar Start -->
+                <div class="navbar-custom">
+                    <a href="index.html" class="logo text-center d-none d-md-inline-block mr-2">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="16">
+                        </span>
+                        <span class="badge badge-primary ml-3 font-18">Laravel</span>
+                    </a>
+
+                    <button type="button" class="btn btn-sm btn-dark d-inline-block d-lg-none button-menu-mobile">Menu</button>
+    
+                    <span class="badge badge-danger float-right">v1.0.0</span>
+                </div>
+                <!-- end Topbar -->
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <div class="page-wrapper">
+                        <div class="left-sidebar">
+                            <div class="slimscroll-menu">
+                                <div class="list-group list-group-transparent mb-0">
+
+                                    <span class="list-group-item disabled">
+                                        Getting Started
+                                    </span>
+
+                                    <a href="index.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-flag-variant-outline"></i>
+                                        </span>Introduction
+                                    </a>
+
+                                    <a href="setup.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-apps"></i>
+                                        </span>Setup
+                                    </a>
+
+                                    <span class="list-group-item disabled">
+                                        Customization
+                                    </span>
+
+                                    <a href="customization.html" class="list-group-item list-group-item-action active">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-square-edit-outline"></i>
+                                        </span>Layout & Themes
+                                    </a>
+
+
+                                    <span class="list-group-item disabled">
+                                        Other
+                                    </span>
+
+                                    <a href="plugins-uses.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-widgets"></i>
+                                        </span>How to use plugins
+                                    </a>
+
+                                    <a href="changelog.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-book-open-page-variant"></i>
+                                        </span>Changelog
+                                    </a>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end left-sidebar-->
+
+                        <div class="page-content">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="p-lg-1">
+                                        <h4 class="mb-2 mt-0 font-weight-semibold">In-built Demos (Skins) and Layouts</h4>
+
+                                        <p>Ubold comes with multiple demos (skins). I.e. 'creative', 'default', 'material', 'modern', 'purple', 'saas'. 
+                                            Each of these skins are having respective dark mode available as well. You can easily use any of them by simply 
+                                            changing the css file reference in your html file.</p>
+
+                                        <p class="mb-4">In your desired layout blade file, simply pass the demo name
+                                            while including <code>head-css</code>. E.g. in <code>resources/views/layouts/vertical.blade.php</code>, search for line <code>@include('layouts.shared/head-css')</code>.
+                                            You can simply change it to <code>@include('layouts.shared/head-css', ["demo" => "creative"])</code> to have creative demo (skin).
+                                        </p>
+
+                                        <div class="mt-2">
+                                            <h4 class="mt-0 mb-2 font-weight-semibold">Customizing Color Palette
+                                            </h4>
+                                            <p>You can change the color palatte of any demo very easily by
+                                                simply changing the few scss variables value.</p>
+                                            <p>In order to modify the colors in existing
+                                                themes, open the <code>_variables.scss</code> file from
+                                                <code>resources/scss/config/&lt;DEMO_NAME&gt;</code> and
+                                                change any variable in it. Your changes would get reflected
+                                                automatically in any bootstrap based components or elements.
+                                                Note that, this requires you to setup and run gulp flow
+                                                provided in installation steps earlier.</p>
+                                            <p class="mb-0">Make sure to run command <code>npm run dev</code> or <code>npm run watch</code> to compile the scss to css after making any changes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="p-lg-1">
+                                        <h4 class="mb-2 mt-0 font-weight-semibold">In-built Layouts</h4>
+
+                                        <p>Ubold provides multiple choices when it comes to layouting. There
+                                            are multiple layout choices available. I.e. Vertical
+                                            (main navigation on "Left"), Horizontal (main navigation on
+                                            "Top"), Detached (main navigation on "Left" side but part of
+                                            main content area) and Two-Column (main navigation on left but in two columns). You can easily use any of them by simply
+                                            changing the few partials and using data attributes on
+                                            <code>body</code> element.</p>
+
+                                        <p class="mb-0">Check out the pages
+                                            <code>rosources/views/layouts/horizontal.blade.php</code>,
+                                            <code>rosources/views/layouts/detached.blade.php</code>,
+                                            <code>rosources/views/layouts/two-column.blade.php</code> files available in
+                                            folder to see how the respective layout can be activated.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="p-lg-1">
+                                        <h4 class="mb-2 mt-0 font-weight-semibold">Customizing Color Mode, Left Sidebar, Topbar, Layout Width and
+                                            Right Sidebar</h4>
+                                        <p>Ubold allows you to have customized left sidebar, overall layout
+                                            width or right sidebar. You could turn the left sidebar to
+                                            different size, theme (look) and size. You can customize it by
+                                            specifying the layout data attribute (<code>data-layout={}</code>) on <code>body</code>
+                                            element in your html. The config object properties accept the
+                                            following values:</p>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Title</th>
+                                                        <th>Type</th>
+                                                        <th width="25%">Options</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><code class="text-nowrap">mode</code></td>
+                                                        <td>String</td>
+                                                        <td>'light' | 'dark'</td>
+                                                        <td>Changes overall color scheme to light or dark</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code class="text-nowrap">width</code>
+                                                        </td>
+                                                        <td>String</td>
+                                                        <td>'fluid' | 'boxed'</td>
+                                                        <td>Changes the width of overall layout to fluid or boxed</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code class="text-nowrap">menuPosition</code>
+                                                        </td>
+                                                        <td>String</td>
+                                                        <td>"fixed" | "scrollable"</td>
+                                                        <td>Sets the menu position. Scrollable would makes both the menus scrollable with body element.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code class="text-nowrap">sidebar</code>
+                                                        </td>
+                                                        <td>Object</td>
+                                                        <td>
+                                                            { 
+                                                                <br />
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color": "light" | "dark" | "brand" | "gradient",<br />
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"size": "default" | "condensed" | "compact",<br />
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"showuser": true | false
+                                                                <br />
+                                                            }
+                                                        </td>
+                                                        <td>
+                                                            The left sidebar related configuration. It's nested object. <br />
+                                                            The <code>color</code> can be set to "light", "dark", "brand" or "gradient". <br />
+                                                            The <code>size</code> would allow to change the size of sidebar to condensed (coompact) or even more small by setting "compact".<br />
+                                                            The <code>showuser</code>, if set to <code>true</code>, would display a user in left sidebar</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code class="text-nowrap">topbar</code>
+                                                        </td>
+                                                        <td>Object</td>
+                                                        <td>
+                                                            { 
+                                                                <br />
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color": "light" | "dark"
+                                                                <br />
+                                                            }
+                                                        </td>
+                                                        <td>The topbar related configuration. It's nested object. <br />
+                                                            The <code>color</code> can be set to "light", "dark", "brand" or "gradient". 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code class="text-nowrap">showRightSidebarOnPageLoad</code>
+                                                        </td>
+                                                        <td>Boolean</td>
+                                                        <td>true | false</td>
+                                                        <td>Indicates whether to show right sidebar on
+                                                            opening up the page</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p>Following are few examples:</p>
+                                        <ul>
+                                            <li>
+                                                <h5>Changes the left sidebar theme to "Dark"</h5>
+                                                <code>&lt;body class="loading"
+                                                    data-layout='{"sidebar": { "color": "dark"}}'&gt;&lt;/body&gt;</code>
+                                            </li>
+                                            <li>
+                                                <h5>Changes the left sidebar theme to "Light (White)"</h5>
+                                                <code>&lt;body class="loading"
+                                                    data-layout='{"sidebar": {"color": "light"}}'&gt;&lt;/body&gt;</code>
+                                            </li>
+                                            <li>
+                                                <h5>Sets the menus (left sidebar and topbar) scrollable with body</h5>
+                                                <code>&lt;body class="loading"
+                                                    data-layout='{"menuPosition":
+                                                    true}'&gt;&lt;/body&gt;</code>
+                                            </li>
+                                            <li>
+                                                <h5>Changes the left sidebar size to small</h5>
+                                                <code>&lt;body class="loading"
+                                                    data-layout='{"sidebar": {"size": "compact"}}'&gt;&lt;/body&gt;</code>
+                                            </li>
+                                            <li>
+                                                <h5>Changes the topbar color to light (white)</h5>
+                                                <code>&lt;body class="loading"
+                                                    data-layout='{"topbar": {"color": "light"}}'&gt;&lt;/body&gt;</code>
+                                            </li>
+                                            <li>
+                                                <h5>Changes the overall color mode to dark</h5>
+                                                <code>&lt;body class="loading"
+                                                    data-layout='{"mode": "dark"}'&gt;&lt;/body&gt;</code>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="p-lg-1">
+                                        <h4 class="mb-2 mt-0 font-weight-semibold">RTL</h4>
+
+                                        <p class="mb-1">
+                                            Ubold also provides support for RTL mode. It's very easy to get the rtl mode by simply <code>mode</code> while extending layout in your page.
+                                            E.g. </p>
+                                        <p class="mb-0">
+                                            <code>@extends('layouts.vertical', ['title' => 'Creative Theme', 'demo' =>
+                                                'creative', 'mode' => '<strong>rtl</strong>'])</code>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="p-lg-1">
+                                        <h4 class="mb-2 mt-0">Adding new page/route</h4>
+                                        
+                                        <p class="mb-0">We have provided a starter page (check
+                                            <code>resources/views/pages/starter.blade.php</code>). It allows you to get
+                                            started easily and helps you to add new page. Simply copy this page and rename it to new one.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page-wrapper-->
+                </div>
+
+            </div>
+            <!-- content -->
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            2015 - 2019 © UBold - by Coderthemes
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="http://coderthemes.com/" target="_blank">About</a>
+                                <a href="http://coderthemes.com/#contact" target="_blank">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end Footer -->
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- END wrapper -->
+
+    <!-- bundle -->
+    <script src="assets/js/app.min.js"></script>
+</body>
+
+</html>

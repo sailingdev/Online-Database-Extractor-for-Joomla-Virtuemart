@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>UBold - Responsive Admin Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Topbar Start -->
+                <div class="navbar-custom">
+                    <a href="index.html" class="logo text-center d-none d-md-inline-block mr-2">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="16">
+                        </span>
+                        <span class="badge badge-primary ml-3 font-18">Laravel</span>
+                    </a>
+
+                    <button type="button" class="btn btn-sm btn-dark d-inline-block d-lg-none button-menu-mobile">Menu</button>
+    
+                    <span class="badge badge-danger float-right">v1.0.0</span>
+                </div>
+                <!-- end Topbar -->
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <div class="page-wrapper">
+                        <div class="left-sidebar">
+                            <div class="slimscroll-menu">
+                                <div class="list-group list-group-transparent mb-0">
+
+                                    <span class="list-group-item disabled">
+                                        Getting Started
+                                    </span>
+
+                                    <a href="index.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-flag-variant-outline"></i>
+                                        </span>Introduction
+                                    </a>
+
+                                    <a href="setup.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-apps"></i>
+                                        </span>Setup
+                                    </a>
+
+                                    <span class="list-group-item disabled">
+                                        Customization
+                                    </span>
+
+                                    <a href="customization.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-square-edit-outline"></i>
+                                        </span>Layout & Themes
+                                    </a>
+
+
+                                    <span class="list-group-item disabled">
+                                        Other
+                                    </span>
+
+                                    <a href="plugins-uses.html" class="list-group-item list-group-item-action active">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-widgets"></i>
+                                        </span>How to use plugins
+                                    </a>
+
+                                    <a href="changelog.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-book-open-page-variant"></i>
+                                        </span>Changelog
+                                    </a>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end left-sidebar-->
+
+                        <div class="page-content">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="p-lg-1">
+                                        <h4 class="mt-0 mb-2 font-weight-semibold">Plugin's Usage Information</h4>
+
+                                        <p>
+                                            We are using multiple awesome plugins (optional) to build out the application pages and others. 
+                                            The following table is describing the necessary assets to include in your <code>*.blade.php</code> file 
+                                            if you are looking to use the same.
+                                        </p>
+                                        <p>
+                                            You can add the required javascript file inside block <code>@section('script')</code> and it would be available in your page. 
+                                            Similarly you can the required css file inside block <code>@section('css')</code>.
+                                        </p>
+                                    </div>
+
+                                    <div class="p-lg-1 mt-1">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered m-0">
+                                                    
+                                                <thead>
+                                                    <tr>
+                                                        <th class="font-weight-semibold">Page / App</th>
+                                                        <th class="font-weight-semibold" style="width: 32%;">Plugin CSS</th>
+                                                        <th class="font-weight-semibold" style="width: 32%;">Plugin js</th>
+                                                        <th class="font-weight-semibold">Custom js</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Chat - App</td>
+                                                        <td>sweetalert2.min.css </td>
+                                                        <td>sweetalert2.min.js, jquery.scrollTo.min.js, moment.min.js</td>
+                                                        <td>jquery.chat.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Todo - App</td>
+                                                        <td>sweetalert2.min.css</td>
+                                                        <td>sweetalert2.min.js, moment.min.js</td>
+                                                        <td>jquery.todo.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kanbanboard</td>
+                                                        <td>-</td>
+                                                        <td>jquery-ui.min.js</td>
+                                                        <td>kanban.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Calendar</td>
+                                                        <td>fullcalendar.min.css</td>
+                                                        <td>moment.min.js, jquery-ui.min.js, fullcalendar.min.js</td>
+                                                        <td>calendar.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Coming-soon</td>
+                                                        <td>-</td>
+                                                        <td>jquery.countdown.min.js</td>
+                                                        <td>coming-soon.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Gallery</td>
+                                                        <td>magnific-popup.css</td>
+                                                        <td>jquery.magnific-popup.min.js</td>
+                                                        <td>gallery.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Modals</td>
+                                                        <td>custombox.min.css</td>
+                                                        <td>custombox.min.js</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Notifications</td>
+                                                        <td>jquery.toast.min.css</td>
+                                                        <td>jquery.toast.min.js</td>
+                                                        <td>toastr.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tooltips & Popovers</td>
+                                                        <td>-</td>
+                                                        <td>tippy.all.min.js</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nestable</td>
+                                                        <td>jquery.nestable.min.css</td>
+                                                        <td>jquery.nestable.min.js</td>
+                                                        <td>nestable.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Range-slider</td>
+                                                        <td>ion.rangeSlider.css, ion.rangeSlider.skinModern.css</td>
+                                                        <td>ion.rangeSlider.min.js</td>
+                                                        <td>range-sliders.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Animation</td>
+                                                        <td>animate.min.css</td>
+                                                        <td>-</td>
+                                                        <td>animation.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sweet-alert</td>
+                                                        <td>sweetalert2.min.css</td>
+                                                        <td>sweetalert2.min.js</td>
+                                                        <td>sweet-alerts.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tour</td>
+                                                        <td>hopscotch.min.css</td>
+                                                        <td>hopscotch.min.js</td>
+                                                        <td>tour.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Loading-buttons</td>
+                                                        <td>ladda-themeless.min.css</td>
+                                                        <td>spin.js, ladda.js</td>
+                                                        <td>loading-btn.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms-advanced - Nice Select</td>
+                                                        <td>nice-select.css</td>
+                                                        <td>jquery.nice-select.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms-advanced - Switchery</td>
+                                                        <td>switchery.min.css</td>
+                                                        <td>switchery.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms-advanced - Select2</td>
+                                                        <td>select2.min.css</td>
+                                                        <td>select2.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms-advanced - Bootstrap MaxLength</td>
+                                                        <td>-</td>
+                                                        <td>bootstrap-maxlength.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms-advanced - Multiple Select</td>
+                                                        <td>multi-select.css</td>
+                                                        <td>jquery.multi-select.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms-advanced - Auto Complete</td>
+                                                        <td>-</td>
+                                                        <td>jquery.mockjax.min.js, jquery.autocomplete.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms-advanced - Bootstrap-select</td>
+                                                        <td>bootstrap-select.min.css</td>
+                                                        <td>bootstrap-select.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms-advanced - Bootstrap Touchspin</td>
+                                                        <td>jquery.bootstrap-touchspin.css</td>
+                                                        <td>jquery.bootstrap-touchspin.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms-validation - Parsley </td>
+                                                        <td>-</td>
+                                                        <td>parsley.min.js</td>
+                                                        <td>form-validation.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form Pickers - Flatpickr </td>
+                                                        <td>flatpickr.min.css</td>
+                                                        <td>flatpickr.min.js</td>
+                                                        <td>form-pickers.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form Pickers - Colorpicker</td>
+                                                        <td>bootstrap-colorpicker.min.css</td>
+                                                        <td>bootstrap-colorpicker.min.js</td>
+                                                        <td>form-pickers.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form Pickers - Clock Picker</td>
+                                                        <td>bootstrap-clockpicker.min.css</td>
+                                                        <td>bootstrap-clockpicker.min.js</td>
+                                                        <td>form-pickers.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form Wizard</td>
+                                                        <td>-</td>
+                                                        <td>jquery.bootstrap.wizard.min.js</td>
+                                                        <td>form-wizard.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form Masks - Input Masks</td>
+                                                        <td>-</td>
+                                                        <td>jquery.mask.min.js</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form Masks - Auto Numberic</td>
+                                                        <td>-</td>
+                                                        <td>autoNumeric-min.js</td>
+                                                        <td>form-masks.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Summernote</td>
+                                                        <td>summernote-bs4.css</td>
+                                                        <td>summernote-bs4.min.js</td>
+                                                        <td>form-summernote.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Quilljs Editor</td>
+                                                        <td>quill.core.css, quill.bubble.css, quill.snow.css</td>
+                                                        <td>katex.min.js, quill.min.js</td>
+                                                        <td>form-quilljs.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>File Uploads - Dropzone </td>
+                                                        <td>dropzone.min.css</td>
+                                                        <td>dropzone.min.js</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>File Uploads - Dropify</td>
+                                                        <td>dropify.min.css</td>
+                                                        <td>dropify.min.js</td>
+                                                        <td>form-fileuploads.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>X Editable</td>
+                                                        <td>bootstrap-editable.css</td>
+                                                        <td>moment.min.js, bootstrap-editable.min.js</td>
+                                                        <td>form-xeditable.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Image Crop</td>
+                                                        <td>cropper.min.css</td>
+                                                        <td>cropper.min.js</td>
+                                                        <td>form-imagecrop.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Datatables</td>
+                                                        <td>dataTables.bootstrap4.css, responsive.bootstrap4.css, buttons.bootstrap4.css, select.bootstrap4.css</td>
+                                                        <td>
+                                                            jquery.dataTables.js, dataTables.bootstrap4.js, dataTables.responsive.min.js, responsive.bootstrap4.min.js, dataTables.buttons.min.js, 
+                                                            buttons.bootstrap4.min.js, buttons.html5.min.js, buttons.flash.min.js, buttons.print.min.js, dataTables.keyTable.min.js, dataTables.select.min.js, 
+                                                            pdfmake.min.js, vfs_fonts.js
+                                                        </td>
+                                                        <td>datatables.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Table Editable</td>
+                                                        <td>-</td>
+                                                        <td>jquery.tabledit.min.js</td>
+                                                        <td>tabledit.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Responsive Table</td>
+                                                        <td>rwd-table.min.css</td>
+                                                        <td>rwd-table.min.js</td>
+                                                        <td>responsive-table.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Foo Tables</td>
+                                                        <td>footable.core.min.css</td>
+                                                        <td>footable.all.min.js</td>
+                                                        <td>foo-tables.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bootstrap Tables</td>
+                                                        <td>bootstrap-table.min.css</td>
+                                                        <td>bootstrap-table.min.js</td>
+                                                        <td>bootstrap-tables.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tablesaw Tables</td>
+                                                        <td>tablesaw.css</td>
+                                                        <td>tablesaw.js</td>
+                                                        <td>tablesaw.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>JsGrid Tables</td>
+                                                        <td>jsgrid.min.css, jsgrid-theme.css</td>
+                                                        <td>jsgrid.min.js</td>
+                                                        <td>jsgrid.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flot Charts</td>
+                                                        <td>-</td>
+                                                        <td>jquery.flot.js, jquery.flot.time.js, jquery.flot.tooltip.min.js, jquery.flot.resize.js, jquery.flot.pie.js, jquery.flot.selection.js, jquery.flot.stack.js, jquery.flot.orderBars.js, jquery.flot.crosshair.js</td>
+                                                        <td>flot.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Morris Charts</td>
+                                                        <td>-</td>
+                                                        <td>morris.min.js, raphael.min.js</td>
+                                                        <td>morris.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chartjs</td>
+                                                        <td>-</td>
+                                                        <td>Chart.bundle.min.js</td>
+                                                        <td>chartjs.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Peity Charts</td>
+                                                        <td>-</td>
+                                                        <td>jquery.peity.min.js</td>
+                                                        <td>peity.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chartist Charts</td>
+                                                        <td>chartist.min.css</td>
+                                                        <td>chartist.min.js, chartist-plugin-tooltip.min.js</td>
+                                                        <td>chartist.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>C3 Charts</td>
+                                                        <td>c3.min.css</td>
+                                                        <td>d3.min.js, c3.min.js</td>
+                                                        <td>c3.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sparklines</td>
+                                                        <td>-</td>
+                                                        <td>jquery.sparkline.min.js</td>
+                                                        <td>sparkline.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jquery knob Charts</td>
+                                                        <td>-</td>
+                                                        <td>jquery.knob.min.js</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ricksaw Charts</td>
+                                                        <td>rickshaw.min.css </td>
+                                                        <td>d3.min.js(v3.5.17), rickshaw.min.js</td>
+                                                        <td>ricksaw.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>JustGage</td>
+                                                        <td>-</td>
+                                                        <td>raphael.min.js, justgage.js</td>
+                                                        <td>justgage.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Google Maps</td>
+                                                        <td>-</td>
+                                                        <td>gmaps.min.js</td>
+                                                        <td>google-maps.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vector Maps</td>
+                                                        <td>jquery-jvectormap-1.2.2.css</td>
+                                                        <td>
+                                                            jquery-jvectormap-1.2.2.min.js, jquery-jvectormap-world-mill-en.js, jquery-jvectormap-us-merc-en.js,
+                                                            jquery-jvectormap-in-mill-en.js, jquery-jvectormap-au-mill-en.js, jquery-jvectormap-us-il-chicago-mill-en.js,
+                                                            jquery-jvectormap-uk-mill-en.js, jquery-jvectormap-ca-lcc-en.js
+                                                        </td>
+                                                        <td>vector-maps.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mapeal Maps</td>
+                                                        <td>-</td>
+                                                        <td>raphael.min.js, jquery.mapael.min.js, world_countries.min.js, usa_states.min.js</td>
+                                                        <td>mapeal-maps.init.js</td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end page-wrapper-->
+
+                    
+                </div>
+
+            </div>
+            <!-- content -->
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            2015 - 2019 © UBold - by Coderthemes
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="http://coderthemes.com/" target="_blank">About</a>
+                                <a href="http://coderthemes.com/#contact" target="_blank">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end Footer -->
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- END wrapper -->
+
+    <!-- bundle -->
+    <script src="assets/js/app.min.js"></script>
+</body>
+
+</html>
