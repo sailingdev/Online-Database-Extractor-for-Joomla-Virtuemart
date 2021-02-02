@@ -55,6 +55,26 @@
                         <span> Dashboard </span>
                     </a>
                 </li>
+                <li>
+                    <a href="#sidebarUserManagement" data-toggle="collapse">
+                        <i data-feather="airplay"></i>
+                        <span> User Management </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarUserManagement">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{{url('permissions')}}">Permissions</a>
+                            </li>
+                            <li>
+                                <a href="{{url('roles')}}">Roles</a>
+                            </li>
+                            <li>
+                                <a href="{{url('users')}}">Users</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
 
         </div>

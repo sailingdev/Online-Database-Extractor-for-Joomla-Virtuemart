@@ -20,3 +20,11 @@ Auth::routes();
 Route::group(['middleware' => 'auth', 'prefix' => '/'], function () {
     Route::get('', 'HomeController@index')->name('index');
 });
+
+Route::group(['middleware' => ['role:admin']], function() {
+    Route::resources([
+        'permissions' => 'Admin\PermissionController',
+        'roles' => 'Admin\RoleController',
+        'users' => 'Admin\UserController'
+    ]);
+});
