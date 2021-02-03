@@ -1,7 +1,8 @@
-@extends('layouts.vertical', ['title' => 'Roles'])
+@extends('layouts.vertical', ['title' => 'User Manage'])
 
 @section('css')
     <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/libs/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css" />
 @endsection
 
 @section('content')
@@ -30,7 +31,8 @@
                             <tr>
                                 <th>#</th>
                                 <th>Name</th>
-                                <th>Permissions</th>
+                                <th>Roles</th>
+                                <th>Created at</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
@@ -47,20 +49,42 @@
 
 @section('script')
     <script src="{{asset('assets/libs/datatables/datatables.min.js')}}"></script>
+    <script src="{{asset('assets/libs/sweetalert2/sweetalert2.min.js')}}"></script>
+
     <script>
         $('#dataTable').DataTable({
             'processing': true,
             'serverSide': true,
             'ajax': {
-                'url': "{{ url('roles') }}",
-                'type': 'GET'
+                'url': "{{ url('users') }}",
+                'type': "GET"
             },
-            'columns': [
-                {'data': 'id'},
-                {'data': 'name'},
-                {'data': 'permissions'},
-                {'data': 'action', orderable: false, searchable: false},
+            'columns':[
+                {data: 'id'},
+                {data: 'name'},
+                {data: 'role'},
+                {data: 'created_at'},
+                {data: 'action', orderable: false, searchable: false},
             ],
         });
+
+        function deleteUser(userId) {
+            Swal.fire({
+                title: "Delete User.",
+                text: "Do you want to delete selected user?",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: "Success",
+                confirmButtonClass: 'btn btn-primary',
+                cancelButtonClass: 'btn btn-danger ml-1',
+                buttonsStyling: false,
+            }).then(function (result) {
+                if (result.value) {
+                    $('#deleteForm'+userId).submit();
+                }
+            })
+        }
     </script>
 @endsection

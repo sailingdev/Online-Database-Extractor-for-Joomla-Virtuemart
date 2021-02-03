@@ -21,6 +21,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="card-box">
+                    <div class="float-left mb-4">
+                        <button class="btn btn-info waves-effect waves-light" type="button">Add New</button>
+                    </div>
                     <div class="table-responsive">
                         <table id="dataTable" class="table table-bordered table-striped">
                             <thead>

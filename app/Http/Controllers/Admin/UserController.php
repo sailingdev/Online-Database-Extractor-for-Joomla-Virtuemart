@@ -1,12 +1,14 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use Spatie\Permission\Models\Permission;
+
 use App\Http\Controllers\Controller;
+use App\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
 
-class PermissionController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,18 +17,36 @@ class PermissionController extends Controller
      */
     public function index()
     {
-        $permissions = Permission::all();
-        if (request()->ajax()) {
-            return Datatables::of($permissions)
+        $users = User::with(['roles' => function($role){
+            $role->select('name')->latest();
+        }])->select(['id', 'name', 'created_at'])->get();
+        if (request()->ajax()){
+            return DataTables::of($users)
                 ->addIndexColumn()
-                ->addColumn('action', function ($row) {
-                    $btn = '<a href="" class="edit btn btn-warning btn-sm mr-1 ">Edit</a>';
-                    $btn .= '<a href="" class="remove btn btn-danger btn-sm ">Delete</a>';
+                ->addColumn('role', function ($row){
+                    $btn = '';
+                    foreach ($row->roles as $val){
+                        $btn .= '<span class="badge label-table badge-primary mr-1">'.$val->name.'</span>';
+                    }
                     return $btn;
                 })
+                ->editColumn('created_at', function ($row){
+                    return Carbon::parse($row->created_at)->toDateTimeString();
+                })
+                ->addColumn('action', function ($row){
+                    $btn = '<a href="'.url("users/".$row->id."/edit" ).'" class="edit btn btn-warning btn-sm mr-1">Edit</a>';
+                    $btn .= '<a href="javascript:deleteUser('.$row->id.')" class="remove btn btn-danger btn-sm ">Delete</a>';
+                    $btn .= '<form id="deleteForm'.$row->id.'" action="'.url("users/".$row->id).'" method="POST" style="display:none">
+                                '.csrf_field().'
+                                '.method_field("DELETE").'
+                            </form>';
+                    return $btn;
+                })
+
+                ->escapeColumns([])
                 ->make(true);
         }
-        return view('admin.permissions.index');
+        return view('admin.users.index');
     }
 
     /**
@@ -69,7 +89,7 @@ class PermissionController extends Controller
      */
     public function edit($id)
     {
-        //
+        dd($id);
     }
 
     /**
@@ -92,6 +112,6 @@ class PermissionController extends Controller
      */
     public function destroy($id)
     {
-        //
+        dd('2342234');
     }
 }
