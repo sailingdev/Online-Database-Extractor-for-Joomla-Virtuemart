@@ -106,23 +106,37 @@ class UserController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View Admin/Users/Edit
      */
     public function edit($id)
     {
-        dd($id);
+        $user = User::with('roles')->where('id', $id)->first();
+        $roles = Role::get();
+        return view('admin.users.edit', compact('user', 'roles'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::with('roles')->where('id', $id)->firstOrFail();
+        $validated = $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required|email|unique:users,email,'.$user->id,
+            'password' => 'required|same:confirm_password',
+            'roles' => 'required'
+        ]);
+        $validated['password'] = Hash::make($validated['password']);
+        $user->update($validated);
+        $user->syncRoles($validated['roles']);
+        return redirect()->route('users.index')
+            ->with('success', 'User updated successfuly');
     }
 
     /**
