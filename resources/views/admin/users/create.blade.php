@@ -19,7 +19,7 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="javascript: void(0);">User Management</a></li>
-                            <li class="breadcrumb-item active"><a href="javascript: void(0);">Users</a></li>
+                            <li class="breadcrumb-item active"><a href="{{url('users')}}">Users</a></li>
                             <li class="breadcrumb-item active">Add New User</li>
                         </ol>
                     </div>
@@ -32,73 +32,82 @@
             <div class="col-lg-6 ">
                 <div class="card">
                     <div class="card-body">
-                        <form class="needs-validation" novalidate method="POST" action="{{url('users')}}">
+                        <form action="{{url('users')}}" method="POST" novalidate>
                             @csrf
                             @method('POST')
-                            <div class="form-group mb-3">
-                                <label for="validationFullName">User name<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="validationFullName" name="name" placeholder="User name" value="" required>
-                                <div class="invalid-feedback">
-                                    Please enter a full name.
-                                </div>
+                            <div class="form-group">
+                                <label for="fullname">Full Name<span class="text-danger">*</span></label>
+                                <input class="form-control @if($errors->has('name')) is-invalid @endif" name="name" type="text"
+                                id="fullname" placeholder="Enter your name" required
+                                value="{{ old('name') }}"/>
+                                @if($errors->has('name'))
+                                    <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('name') }}</strong>
+                                        </span>
+                                @endif
                             </div>
-                            <div class="form-group mb-3">
-                                <label for="validationEmail">Email<span class="text-danger">*</span></label>
-                                <div class="input-group">
-                                    <input type="email" class="form-control" id="validationEmail" name="email" placeholder="Email address" aria-describedby="inputGroupPrepend"
-                                           required>
-                                    <div class="invalid-feedback">
-                                        Please enter a email address.
-                                    </div>
-                                    @if($errors->first('email'))
-                                        <div class="invalid-feedback" style="display: block">
-                                            {{$errors->first('email')}}
-                                        </div>
-                                    @endif
-                                </div>
+                            <div class="form-group">
+                                <label for="emailaddress">Email address<span class="text-danger">*</span></label>
+                                <input class="form-control @if($errors->has('email')) is-invalid @endif" name="email" type="email"
+                                       id="emailaddress" required placeholder="Enter your email"
+                                       value="{{ old('email') }}"/>
+
+                                @if($errors->has('email'))
+                                    <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('email') }}</strong>
+                                        </span>
+                                @endif
                             </div>
-                            <div class="form-group mb-3">
+                            <div class="form-group">
                                 <label for="selectize-select" >Select User Role<span class="text-danger">*</span></label> <br/>
                                 <select id="selectize-select" class="form-control" name="roles" required>
                                     <option value="">Choose...</option>
-                                @foreach($roles as $role)
+                                    @foreach($roles as $role)
                                         @if($role->id == 1)
                                             <option value="{{$role->name}}" disabled>{{$role->name}}</option>
                                         @else
                                             <option value="{{$role->name}}" >{{$role->name}}</option>
                                         @endif
-                                @endforeach
+                                    @endforeach
                                 </select>
-                                <div class="invalid-feedback" id="select_invalid">
-                                    Please choose a role.
-                                </div>
+                                @if($errors->has('roles'))
+                                    <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('roles') }}</strong>
+                                        </span>
+                                @endif
                             </div>
-                            <div class="form-group mb-3">
-                                <label for="pass1">Password<span class="text-danger">*</span></label>
-                                <input id="pass1" name="password" type="password" placeholder="Password" required
-                                       class="form-control">
+                            <div class="form-group">
+                                <label for="password">Password<span class="text-danger">*</span></label>
+                                <input class="form-control @if($errors->has('password')) is-invalid @endif" name="password" type="password" required id="password" placeholder="Enter your password" value="{{old('password')}}" />
+                                @if($errors->has('password'))
+                                    <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('password') }}</strong>
+                                        </span>
+                                @endif
                             </div>
-                            <div class="form-group mb-3">
-                                <label for="pass2">Confirm Password <span class="text-danger">*</span></label>
-                                <input data-parsley-equalto="#pass1" type="password" required
-                                       placeholder="Confirm Password" class="form-control" id="pass2" name="confirm_password">
-                                <div class="invalid-feedback" id="pass_invalide">
-                                    Password Invalid.
-                                </div>
-                            </div>
+                            <div class="form-group">
+                                <label for="confirm_password">Confirm password<span class="text-danger">*</span></label>
+                                <input class="form-control @if($errors->has('confirm_password')) is-invalid @endif"
+                                       name="confirm_password" type="password" required id="confirm_password" placeholder="Enter your password" value="{{old('confirm_password')}}"/>
 
+                                @if($errors->has('confirm_password'))
+                                    <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('confirm_password') }}</strong>
+                                        </span>
+                                @endif
+                            </div>
                             <div class="form-group text-right m-b-0">
                                 <button id="btn_submit" class="btn btn-primary waves-effect waves-light" type="submit">
                                     Submit form
                                 </button>
                                 <a href="{{url('users')}}">
                                     <button type="button" class="btn btn-secondary waves-effect m-l-5">
-                                    Cancel
+                                        Cancel
                                     </button>
                                 </a>
                             </div>
-                        </form>
 
+                        </form>
                     </div> <!-- end card-body-->
                 </div> <!-- end card-->
             </div> <!-- end col-->
@@ -125,23 +134,23 @@
     <script src="{{asset('assets/js/pages/form-advanced.init.js')}}"></script>
 
     <script>
-        $(document).ready(function(){
-            $('#btn_submit').click(function () {
-                if (!$('#selectize-select').find(':selected').text()){
-                    $('#select_invalid').show();
-                }
-            });
-            $('#selectize-select').change(function(){
-                $('#select_invalid').hide();
-            });
-            $('#pass1, #pass2').focusout(function(){
-                let pass1 = $('#pass1').val();
-                let pass2 = $('#pass2').val();
-                if(pass1 != pass2){
-                    $('#pass_invalide').show();
-                } else
-                    $('#pass_invalide').hide();
-            })
-        });
+        // $(document).ready(function(){
+        //     $('#btn_submit').click(function () {
+        //         if (!$('#selectize-select').find(':selected').text()){
+        //             $('#select_invalid').show();
+        //         }
+        //     });
+        //     $('#selectize-select').change(function(){
+        //         $('#select_invalid').hide();
+        //     });
+        //     $('#pass1, #pass2').focusout(function(){
+        //         let pass1 = $('#pass1').val();
+        //         let pass2 = $('#pass2').val();
+        //         if(pass1 != pass2){
+        //             $('#pass_invalide').show();
+        //         } else
+        //             $('#pass_invalide').hide();
+        //     })
+        // });
     </script>
 @endsection

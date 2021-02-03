@@ -19,7 +19,7 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="javascript: void(0);">User Management</a></li>
-                            <li class="breadcrumb-item active"><a href="javascript: void(0);">Users</a></li>
+                            <li class="breadcrumb-item active"><a href="{{url('users')}}">Users</a></li>
                             <li class="breadcrumb-item active">Edit User</li>
                         </ol>
                     </div>
@@ -37,7 +37,7 @@
                             @method('PUT')
                             <div class="form-group">
                                 <label for="fullname">Full Name<span class="text-danger">*</span></label>
-                                <input class="form-control"@if($errors->has('name')) is-invalid @endif" name="name" type="text"
+                                <input class="form-control @if($errors->has('name')) is-invalid @endif" name="name" type="text"
                                 id="fullname" placeholder="Enter your name" required
                                 value="{{ $user->name }}"/>
                                 @if($errors->has('name'))

@@ -79,16 +79,17 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $validated = $this->validate($request, [
-            'name' => 'required',
-            'email' => 'required|email|unique:users,email',
-            'password' => 'required|same:confirm_password',
+            'name' => 'required|min:2|max:100',
+            'email' => 'required|email|max:200|unique:users,email',
+            'password' => 'required|required_with:confirm_password|same:confirm_password',
+            'confirm_password' => 'required',
             'roles' => 'required'
         ]);
         $validated['password'] = Hash::make($validated['password']);
         $user = User::create($validated);
         $user->assignRole($validated['roles']);
         return redirect()->route('users.index')
-            ->with('success', 'User created successfuly');
+            ->with('success', 'User created successfully');
     }
 
     /**
@@ -127,26 +128,31 @@ class UserController extends Controller
     {
         $user = User::with('roles')->where('id', $id)->firstOrFail();
         $validated = $this->validate($request, [
-            'name' => 'required',
-            'email' => 'required|email|unique:users,email,'.$user->id,
-            'password' => 'required|same:confirm_password',
+            'name' => 'required|min:2|max:100',
+            'email' => 'required|email|max:200|unique:users,email,'.$user->id,
+            'password' => 'required|required_with:confirm_password|same:confirm_password',
+            'confirm_password' => 'required',
             'roles' => 'required'
         ]);
         $validated['password'] = Hash::make($validated['password']);
         $user->update($validated);
         $user->syncRoles($validated['roles']);
         return redirect()->route('users.index')
-            ->with('success', 'User updated successfuly');
+            ->with('success', 'User updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy($id)
     {
-        dd($id);
+        $user = User::whereid($id)->firstOrFail();
+        $user->delete();
+
+        return redirect('users')
+            ->with('success', 'User deleted successfully.');
     }
 }
