@@ -23,7 +23,7 @@
             <div class="col-sm-12">
                 <div class="card-box">
                     <div class="float-left mb-4">
-                        <button class="btn btn-info waves-effect waves-light" type="button">Add New</button>
+                        <a href="{{url('users/create')}}"><button class="btn btn-info waves-effect waves-light" type="button">Add New</button></a>
                     </div>
                     <div class="table-responsive">
                         <table id="dataTable" class="table table-bordered table-striped">
@@ -67,6 +67,10 @@
                 {data: 'action', orderable: false, searchable: false},
             ],
         });
+
+        function addNew(){
+
+        }
 
         function deleteUser(userId) {
             Swal.fire({
