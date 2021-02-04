@@ -68,10 +68,6 @@
             ],
         });
 
-        function addNew(){
-
-        }
-
         function deleteUser(userId) {
             Swal.fire({
                 title: "Delete User.",

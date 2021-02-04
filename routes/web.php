@@ -19,6 +19,7 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth', 'prefix' => '/'], function () {
     Route::get('', 'HomeController@index')->name('index');
+    Route::resource('database', 'User\DatabaseController');
 });
 
 Route::group(['middleware' => ['role:admin']], function() {

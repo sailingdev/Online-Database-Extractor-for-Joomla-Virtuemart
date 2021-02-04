@@ -49,9 +49,8 @@
                 <li class="menu-title">Navigation</li>
 
                 <li>
-                    <a href="{{route('index')}}" >
+                    <a href="{{ route('index') }}" >
                         <i data-feather="airplay"></i>
-                        <span class="badge badge-success badge-pill float-right">4</span>
                         <span> Dashboard </span>
                     </a>
                 </li>
@@ -63,12 +62,12 @@
                     </a>
                     <div class="collapse" id="sidebarUserManagement">
                         <ul class="nav-second-level">
-                            <li>
-                                <a href="{{url('permissions')}}">Permissions</a>
-                            </li>
-                            <li>
-                                <a href="{{url('roles')}}">Roles</a>
-                            </li>
+{{--                            <li>--}}
+{{--                                <a href="{{url('permissions')}}">Permissions</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="{{url('roles')}}">Roles</a>--}}
+{{--                            </li>--}}
                             <li>
                                 <a href="{{url('users')}}">Users</a>
                             </li>

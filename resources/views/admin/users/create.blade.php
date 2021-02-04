@@ -132,25 +132,4 @@
 
     <!-- Page js-->
     <script src="{{asset('assets/js/pages/form-advanced.init.js')}}"></script>
-
-    <script>
-        // $(document).ready(function(){
-        //     $('#btn_submit').click(function () {
-        //         if (!$('#selectize-select').find(':selected').text()){
-        //             $('#select_invalid').show();
-        //         }
-        //     });
-        //     $('#selectize-select').change(function(){
-        //         $('#select_invalid').hide();
-        //     });
-        //     $('#pass1, #pass2').focusout(function(){
-        //         let pass1 = $('#pass1').val();
-        //         let pass2 = $('#pass2').val();
-        //         if(pass1 != pass2){
-        //             $('#pass_invalide').show();
-        //         } else
-        //             $('#pass_invalide').hide();
-        //     })
-        // });
-    </script>
 @endsection
