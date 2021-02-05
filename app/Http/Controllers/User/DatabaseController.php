@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Database;
+use App\Rules\ValidPrefix;
 
 class DatabaseController extends Controller
 {
@@ -32,18 +33,20 @@ class DatabaseController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
         $validated = $this->validate($request, [
             'host_name' => 'required',
             'database_name' => 'required',
-            'table_prefix' => 'required|regex:/^[a-zA-Z]+$/u',
+            'table_prefix' => ['required', new ValidPrefix],
             'user_name' => 'required',
             'password' => 'required'
         ]);
-
+        Database::create($validated);
+        return redirect(route('index'))
+            ->with('success', 'Database connected successfully.');
     }
 
     /**

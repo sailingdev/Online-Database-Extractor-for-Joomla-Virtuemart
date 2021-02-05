@@ -58,7 +58,7 @@
                             <div class="form-group">
                                 <label for="table_prefix">Table Prefix<span class="text-danger">*</span></label>
                                 <input class="form-control @if($errors->has('table_prefix')) is-invalid @endif" name="table_prefix" type="text"
-                                       id="table_prefix" placeholder="Enter Database Name" required
+                                       id="table_prefix" placeholder="Ex: tortu_" required
                                        value="{{ old('table_prefix') }}"/>
                                 @if($errors->has('table_prefix'))
                                     <span class="invalid-feedback" role="alert">
