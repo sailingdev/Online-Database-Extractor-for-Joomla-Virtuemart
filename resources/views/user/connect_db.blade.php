@@ -25,10 +25,17 @@
             <div class="col-lg-6 ">
                 <div class="card">
                     <div class="card-body">
+                        <div class="form-group">
+
+                            @if($errors->has('db_error'))
+                                <span class="invalid-feedback" role="alert" style="display:block">
+                                    <strong>{{ $errors->first('db_error') }}</strong>
+                                </span>
+                            @endif
+                        </div>
                         <form action="{{url('database')}}" method="POST" novalidate>
                             @csrf
                             @method('POST')
-
                             <div class="form-group">
                                 <label for="host_name">Host Name<span class="text-danger">*</span></label>
                                 <input class="form-control @if($errors->has('host_name')) is-invalid @endif" name="host_name" type="text"
@@ -82,7 +89,7 @@
                             <!-- end User Name -->
 
                             <div class="form-group">
-                                <label for="password">Password<span class="text-danger">*</span></label>
+                                <label for="password">Password</label>
                                 <input class="form-control @if($errors->has('password')) is-invalid @endif" name="password" type="password" required id="password" placeholder="Enter your password" value="{{old('password')}}" />
                                 @if($errors->has('password'))
                                     <span class="invalid-feedback" role="alert">
