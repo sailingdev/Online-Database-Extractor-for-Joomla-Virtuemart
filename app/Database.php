@@ -12,7 +12,7 @@ class Database extends Model
      * @var array
      */
     protected $fillable = [
-        'host_name', 'database_name', 'table_prefix', 'user_name','password',
+        'host_name', 'database_name', 'table_prefix', 'user_name',
     ];
 
     /**

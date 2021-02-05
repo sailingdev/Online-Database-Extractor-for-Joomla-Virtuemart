@@ -19,7 +19,7 @@ class CreateDatabasesTable extends Migration
             $table->string('database_name');
             $table->string('table_prefix');
             $table->string('user_name');
-            $table->string('password');
+            $table->string('password')->nullable(true);
             $table->timestamps();
         });
     }

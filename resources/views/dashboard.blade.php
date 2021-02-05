@@ -51,22 +51,36 @@
                         <table id="dataTable" class="table table-bordered table-striped">
                             <thead>
                             <tr>
-                                <th>#</th>
-                                <th>Name</th>
-                                <th>Roles</th>
-                                <th>Created at</th>
-                                <th>Action</th>
+                                <th>Order Number / Invoice</th>
+                                <th>Name / Email</th>
+                                <th>Payment Method</th>
+                                <th>Shipment</th>
+{{--                                <th>Print View</th>--}}
+                                <th>Order Date</th>
+                                <th>Last Modified</th>
+{{--                                <th>Paid</th>--}}
+                                <th>Status</th>
+{{--                                <th>Not Shopper?</th>--}}
+                                <th>Total</th>
+                                <th>Order ID</th>
                             </tr>
                             </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                            </tr>
-                            </tbody>
+{{--                            <tbody>--}}
+{{--                            <tr>--}}
+{{--                                <td>1</td>--}}
+{{--                                <td>2</td>--}}
+{{--                                <td>3</td>--}}
+{{--                                <td>4</td>--}}
+{{--                                <td>5</td>--}}
+{{--                                <td>6</td>--}}
+{{--                                <td>7</td>--}}
+{{--                                <td>8</td>--}}
+{{--                                <td>9</td>--}}
+{{--                                <td>10</td>--}}
+{{--                                <td>11</td>--}}
+{{--                                <td>12</td>--}}
+{{--                            </tr>--}}
+{{--                            </tbody>--}}
                         </table>
                     </div>
                     <!-- end dataTable -->
@@ -81,21 +95,25 @@
 @section('script')
     <script src="{{asset('assets/libs/datatables/datatables.min.js')}}"></script>
     <script src="{{asset('assets/libs/sweetalert2/sweetalert2.min.js')}}"></script>
-{{--    <script>--}}
-    {{--    $('#dataTable').DataTable({--}}
-    {{--        'processing': true,--}}
-    {{--        'serverSide': true,--}}
-    {{--        'ajax': {--}}
-    {{--            'url': "{{ url('users') }}",--}}
-    {{--            'type': "GET"--}}
-    {{--        },--}}
-    {{--        'columns':[--}}
-    {{--            {data: 'id'},--}}
-    {{--            {data: 'name'},--}}
-    {{--            {data: 'role'},--}}
-    {{--            {data: 'created_at'},--}}
-    {{--            {data: 'action', orderable: false, searchable: false},--}}
-    {{--        ],--}}
-    {{--    });--}}
-    {{--</script>--}}
+    <script>
+        $('#dataTable').DataTable({
+            'processing': true,
+            'serverSide': true,
+            'ajax': {
+                'url': "{{ url('database') }}",
+                'type': "GET"
+            },
+            'columns':[
+                {data: 'order_number'},
+                {data: 'name_email'},
+                {data: 'payment_method'},
+                {data: 'shipment'},
+                {data: 'order_date'},
+                {data: 'last_modified'},
+                {data: 'status'},
+                {data: 'total'},
+                {data: 'order_id'},
+            ],
+        });
+    </script>
 @endsection
