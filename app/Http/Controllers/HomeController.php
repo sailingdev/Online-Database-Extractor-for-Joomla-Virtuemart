@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Database;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+//use App\Database;
+//use App\User;
 
 class HomeController extends Controller
 {
@@ -17,12 +22,15 @@ class HomeController extends Controller
     }
 
     /**
-     * Show the application dashboard.
+     * Show the application dashboard with the Database connected status.
      *
      * @return \Illuminate\Contracts\Support\Renderable
+     * @return Boolean $db_status
      */
     public function index()
     {
-        return view('dashboard');
+        $rows = Database::where('user_id', Auth::user()->id)->get();
+        $db_status = $rows->count() ? true : false ;
+        return view('dashboard', compact('db_status'));
     }
 }

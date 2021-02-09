@@ -41,18 +41,25 @@
 
         <div class="row">
             <div class="col-sm-12">
+                @if($db_status)
                 <div class="card-box">
                     <div class="float-left mb-4">
                         <a href="{{route('database.create')}}"><button class="btn btn-info waves-effect waves-light" type="button">Connect DataBase</button></a>
                     </div>
 
+                    <div class="float-right mb-4">
+                        <a href="{{route('database.create')}}">
+                                 <i class="icon-printer font-28"></i>
+                         </a>
+                    </div>
                     <!-- start dataTable -->
                     <div class="table-responsive">
                         <table id="dataTable" class="table table-bordered table-striped">
                             <thead>
                             <tr>
+                                <th></th>
                                 <th>Order Number / Invoice</th>
-                                <th>Name / Email</th>
+                                <th class="mdi-border-vertical">Name / Email</th>
                                 <th>Payment Method</th>
                                 <th>Shipment</th>
 {{--                                <th>Print View</th>--}}
@@ -65,26 +72,11 @@
                                 <th>Order ID</th>
                             </tr>
                             </thead>
-{{--                            <tbody>--}}
-{{--                            <tr>--}}
-{{--                                <td>1</td>--}}
-{{--                                <td>2</td>--}}
-{{--                                <td>3</td>--}}
-{{--                                <td>4</td>--}}
-{{--                                <td>5</td>--}}
-{{--                                <td>6</td>--}}
-{{--                                <td>7</td>--}}
-{{--                                <td>8</td>--}}
-{{--                                <td>9</td>--}}
-{{--                                <td>10</td>--}}
-{{--                                <td>11</td>--}}
-{{--                                <td>12</td>--}}
-{{--                            </tr>--}}
-{{--                            </tbody>--}}
                         </table>
                     </div>
                     <!-- end dataTable -->
                 </div>
+                @endif
             </div>
         </div>
         <!-- end row -->
@@ -96,6 +88,7 @@
     <script src="{{asset('assets/libs/datatables/datatables.min.js')}}"></script>
     <script src="{{asset('assets/libs/sweetalert2/sweetalert2.min.js')}}"></script>
     <script>
+        @if($db_status)
         $('#dataTable').DataTable({
             'processing': true,
             'serverSide': true,
@@ -104,6 +97,7 @@
                 'type': "GET"
             },
             'columns':[
+                {data: 'check_box'},
                 {data: 'order_number'},
                 {data: 'name_email'},
                 {data: 'payment_method'},
@@ -114,6 +108,13 @@
                 {data: 'total'},
                 {data: 'order_id'},
             ],
+            'createdRow': function(row, data, dataIndex) {
+                console.log(JSON.stringify($(row).find('td:eq(1)')));
+            }
         });
+        @else
+        window.location = "{{route('database.create')}}";
+        @endif
     </script>
+
 @endsection

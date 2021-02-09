@@ -54,6 +54,7 @@
                         <span> Dashboard </span>
                     </a>
                 </li>
+                @hasrole('admin')
                 <li>
                     <a href="#sidebarUserManagement" data-toggle="collapse">
                         <i data-feather="users"></i>
@@ -74,6 +75,7 @@
                         </ul>
                     </div>
                 </li>
+                @endhasrole
             </ul>
 
         </div>

@@ -14,7 +14,7 @@ class CreateDatabasesTable extends Migration
     public function up()
     {
         Schema::create('databases', function (Blueprint $table) {
-            $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('host_name');
             $table->string('database_name');
             $table->string('table_prefix');

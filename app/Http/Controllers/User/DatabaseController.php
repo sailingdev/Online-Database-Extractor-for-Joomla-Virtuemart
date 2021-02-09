@@ -7,7 +7,10 @@ use http\Message;
 use Illuminate\Http\Request;
 use App\Database;
 use App\Rules\ValidPrefix;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+use Throwable;
 use Yajra\DataTables\DataTables;
 use mysqli;
 
@@ -21,7 +24,7 @@ class DatabaseController extends Controller
      */
     public function index()
     {
-        $info = Database::orderBy('id', 'DESC')->first();
+        $info = Database::where('user_id', Auth::user()->id)->firstOrFail();
         $mysql = @new mysqli(
             $info['host_name'], $info['user_name'], $info['password'], $info['database_name']
         );
@@ -30,6 +33,10 @@ class DatabaseController extends Controller
         $data = $this->check_query($mysql, $tables);
         if (request()->ajax()){
             return DataTables::of($data)
+                ->editColumn('check_box', function($row) {
+                    $el = '<input type="checkbox" style="vertical-align:middle" value="'.$row['order_id'].'" />';
+                    return $el;
+                })
                 ->addColumn('name_email', function($row){
                     $elements =explode("/", $row['name_email']);
                     $btn = $elements[0]."<br>".$elements[1];
@@ -79,16 +86,18 @@ class DatabaseController extends Controller
             'table_prefix' => ['required', new ValidPrefix],
             'user_name' => 'required',
         ]);
+        $validated = Arr::prepend($validated, Auth::user()->id, 'user_id');
         $mysql = @new mysqli(
             $validated['host_name'], $validated['user_name'], '', $validated['database_name']
         );
         $this->check_db($mysql);
         $tables = $this->check_tbl($mysql, $validated['table_prefix']);
-        $database = Database::orderBy('id', 'DESC')->first();
-        if ($database){
+        try {
+            $database = Database::where('user_id', Auth::user()->id)->firstOrFail();
             $database->update($validated);
-        } else
+        } catch (Throwable  $e) {
             Database::create($validated);
+        }
         $mysql->close();
         return redirect()->route('index')
             ->with('success', 'linked new database.');

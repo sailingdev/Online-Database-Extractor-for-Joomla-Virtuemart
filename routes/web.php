@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,7 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth', 'prefix' => '/'], function () {
     Route::get('', 'HomeController@index')->name('index');
+    Route::get('/dashboard', [HomeController::class, 'index']);
     Route::resource('database', 'User\DatabaseController');
 });
 
