@@ -48,7 +48,9 @@
                     </div>
 
                     <div class="float-right mb-4">
-                        <a href="{{route('database.create')}}">
+                        <form id="print" method="GET" target="_blank">
+                        </form>
+                        <a href="javascript: print();">
                                  <i class="icon-printer font-28"></i>
                          </a>
                     </div>
@@ -97,7 +99,7 @@
                 'type': "GET"
             },
             'columns':[
-                {data: 'check_box'},
+                {data: 'check_box', orderable: false, searchable: false},
                 {data: 'order_number'},
                 {data: 'name_email'},
                 {data: 'payment_method'},
@@ -108,10 +110,26 @@
                 {data: 'total'},
                 {data: 'order_id'},
             ],
-            'createdRow': function(row, data, dataIndex) {
-                console.log(JSON.stringify($(row).find('td:eq(1)')));
-            }
         });
+        function print(){
+            let checked = $('input[name=order_id]:checked').map(function(){
+                return this.value;
+            }).get();
+            if(!checked.length){
+                Swal.fire({
+                    title: "Print Warning!",
+                    text: "Please check what you want to print.sss",
+                    type: 'info',
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: "OK",
+                    confirmButtonClass: 'btn btn-primary',
+                    buttonsStyling: false,
+                });
+            }else {
+                $('#print').attr('action', '/printer/'+checked);
+                $('#print').submit();
+            }
+        }
         @else
         window.location = "{{route('database.create')}}";
         @endif

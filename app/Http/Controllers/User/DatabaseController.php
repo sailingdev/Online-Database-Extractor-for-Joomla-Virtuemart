@@ -34,7 +34,7 @@ class DatabaseController extends Controller
         if (request()->ajax()){
             return DataTables::of($data)
                 ->editColumn('check_box', function($row) {
-                    $el = '<input type="checkbox" style="vertical-align:middle" value="'.$row['order_id'].'" />';
+                    $el = '<input type="checkbox" name="order_id" style="vertical-align:middle" value="'.$row['order_id'].'" />';
                     return $el;
                 })
                 ->addColumn('name_email', function($row){
@@ -125,7 +125,7 @@ class DatabaseController extends Controller
      * @throws ValidationException
      */
     public function check_tbl($db, $prefix){
-        $tables = ['orders', 'order_userinfos', 'paymentmethods_es_es', 'shipmentmethods_es_es', 'orderstates'];
+        $tables = ['orders', 'order_userinfos', 'paymentmethods_es_es', 'shipmentmethods_es_es', 'orderstates', 'countries', 'states'];
         $prefix .= 'virtuemart_';
         $tbls = [];
         foreach ($tables as $tbl){
@@ -148,8 +148,14 @@ class DatabaseController extends Controller
                 case $tables[3]:
                     $tbls['shipment'] = $tbl;
                     break;
-                default:
+                case $tables[4]:
                     $tbls['orderstates'] = $tbl;
+                    break;
+                case $tables[5]:
+                    $tbls['countries'] = $tbl;
+                    break;
+                default:
+                    $tbls['states'] = $tbl;
             }
         }
         return $tbls;
