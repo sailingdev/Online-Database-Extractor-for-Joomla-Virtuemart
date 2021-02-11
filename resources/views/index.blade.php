@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>UBold - Responsive Admin Dashboard & Landing Page Template</title>
+        <title>Laravel-Joomla_Virtuemart DB management system</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -80,10 +80,10 @@
                                     <h1 class="mb-4 mt-3">
                                         The Most Complete Responsive Web UI Kit &amp; Dashboard Template
                                     </h1>
-            
-                                    <p class="mb-4 pt-2 f-16">Ubold is a fully featured dashboard and admin template comes with tones of well designed UI elements, 
+
+                                    <p class="mb-4 pt-2 f-16">Ubold is a fully featured dashboard and admin template comes with tones of well designed UI elements,
                                         components, widgets and applications and secondary pages.</p>
-            
+
                                     <a href="#demos" class="btn btn-primary btn-lg smooth-scroll"><i class="fe-eye mr-1"></i> Preview <i class="fe-arrow-right ml-1"></i></a>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
                             </div>
                             <h4 class="mb-2">Multiple Demos with flexible layouts</h4>
                             <p class="text-muted">
-                                Ubold provides handful of different demos (skins) and layout options for different use cases. 
+                                Ubold provides handful of different demos (skins) and layout options for different use cases.
                             </p>
                         </div>
                     </div>
@@ -399,7 +399,7 @@
                             <p class="text">Ubold makes it easier to build better websites with great speed. Save hundreds of hours of design and development by using it.</p>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-3 offset-md-4">
                         <h5 class="f-16 footer-list-title">Help</h5>
                         <ul class="list-unstyled mb-0 mt-3 footer-list">
@@ -423,8 +423,8 @@
             <!-- container-fluid -->
         </footer>
         <!-- footer end -->
-        
-        <!-- Back to top -->    
+
+        <!-- Back to top -->
         <a href="#" class="back-to-top" id="back-to-top"> <i class="mdi mdi-chevron-up"> </i> </a>
 
         <!-- javascript -->
@@ -434,13 +434,13 @@
         <script type="text/javascript">
             ! function($) {
                 "use strict";
-            
+
                 var Ubold = function() {};
-            
+
                 Ubold.prototype.initStickyMenu = function() {
                     $(window).scroll(function() {
                         var scroll = $(window).scrollTop();
-                    
+
                         if (scroll >= 50) {
                             $(".sticky").addClass("nav-sticky");
                         } else {
@@ -448,7 +448,7 @@
                         }
                     });
                 },
-            
+
                 Ubold.prototype.initSmoothLink = function() {
                     $('.navbar-nav a').on('click', function(event) {
                         var $anchor = $(this);
@@ -459,14 +459,14 @@
                     });
 
                     // general
-                    $("a.smooth-scroll").on('click', function(e) { 
-                        e.preventDefault(); 
+                    $("a.smooth-scroll").on('click', function(e) {
+                        e.preventDefault();
                         var dest = $(this).attr('href');
-                        $('html,body').animate({ scrollTop: $(dest).offset().top }, 'slow'); 
+                        $('html,body').animate({ scrollTop: $(dest).offset().top }, 'slow');
                     });
                 },
-        
-            
+
+
                 Ubold.prototype.initBacktoTop = function() {
                     $(window).scroll(function(){
                         if ($(this).scrollTop() > 100) {
@@ -474,14 +474,14 @@
                         } else {
                             $('.back-to-top').fadeOut();
                         }
-                    }); 
+                    });
                     $('.back-to-top').click(function(){
                         $("html, body").animate({ scrollTop: 0 }, 1000);
                         return false;
                     });
                 },
-            
-            
+
+
                 Ubold.prototype.init = function() {
                     this.initStickyMenu();
                     this.initSmoothLink();
@@ -490,7 +490,7 @@
                 //init
                 $.Ubold = new Ubold, $.Ubold.Constructor = Ubold
             }(window.jQuery),
-            
+
             //initializing
             function($) {
                 "use strict";
