@@ -66,6 +66,10 @@
                 {data: 'created_at'},
                 {data: 'action', orderable: false, searchable: false},
             ],
+            "fnRowCallback" : function(nRow, aData, iDisplayIndex){
+                $("td:first", nRow).html(iDisplayIndex +1);
+                return nRow;
+            },
         });
 
         function deleteUser(userId) {

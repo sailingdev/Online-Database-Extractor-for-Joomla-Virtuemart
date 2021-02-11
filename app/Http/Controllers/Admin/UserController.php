@@ -24,6 +24,7 @@ class UserController extends Controller
         $users = User::with(['roles' => function($role){
             $role->select('name')->latest();
         }])->select(['id', 'name', 'created_at'])->get();
+
         if (request()->ajax()){
             return DataTables::of($users)
                 ->addIndexColumn()
