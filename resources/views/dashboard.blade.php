@@ -55,7 +55,7 @@
                          </a>
                     </div>
                     <!-- start dataTable -->
-                    <div class="table-responsive">
+                     <div class="table-responsive">
                         <table id="dataTable" class="table table-bordered table-striped">
                             <thead>
                             <tr>
@@ -64,12 +64,9 @@
                                 <th class="mdi-border-vertical">Name / Email</th>
                                 <th>Payment Method</th>
                                 <th>Shipment</th>
-{{--                                <th>Print View</th>--}}
                                 <th>Order Date</th>
                                 <th>Last Modified</th>
-{{--                                <th>Paid</th>--}}
                                 <th>Status</th>
-{{--                                <th>Not Shopper?</th>--}}
                                 <th>Total</th>
                                 <th>Order ID</th>
                             </tr>
