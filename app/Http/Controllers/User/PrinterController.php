@@ -30,9 +30,6 @@ class PrinterController extends Controller
 //        return view('user.printer', compact('data'));
 
         $pdf = PDF::loadView('user.printer', compact('data'));
-
-//        $pdf->save(storage_path().'shipping_label.pdf');
-        $pdf->setPaper('A4');
         return $pdf->stream('shipping_label.pdf');
     }
 

@@ -3,6 +3,11 @@
 @section('css')
     <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/libs/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css" />
+    <style>
+        #dataTable tbody tr td {
+            vertical-align: middle;
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -59,7 +64,8 @@
                         <table id="dataTable" class="table table-bordered table-striped">
                             <thead>
                             <tr>
-                                <th></th>
+                                <th style="vertical-align: middle;"><input type="checkbox" id="checkall" style="vertical-align:middle" /></th>
+                                <th>Order ID</th>
                                 <th>Order Number / Invoice</th>
                                 <th class="mdi-border-vertical">Name / Email</th>
                                 <th>Payment Method</th>
@@ -68,7 +74,6 @@
                                 <th>Last Modified</th>
                                 <th>Status</th>
                                 <th>Total</th>
-                                <th>Order ID</th>
                             </tr>
                             </thead>
                         </table>
@@ -97,6 +102,7 @@
             },
             'columns':[
                 {data: 'check_box', orderable: false, searchable: false},
+                {data: 'order_id'},
                 {data: 'order_number'},
                 {data: 'name_email'},
                 {data: 'payment_method'},
@@ -105,8 +111,12 @@
                 {data: 'last_modified'},
                 {data: 'status'},
                 {data: 'total'},
-                {data: 'order_id'},
             ],
+        });
+        $(document).ready(function () {
+            $('#checkall').click(function(){
+                $("input[type=checkbox]").prop('checked', $(this).prop('checked'));
+            });
         });
         function print(){
             let checked = $('input[name=order_id]:checked').map(function(){
