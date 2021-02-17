@@ -29,7 +29,7 @@ class PrinterController extends Controller
         $data = $this->check_query($mysql, $tables, $ids);
 //        return view('user.printer', compact('data'));
 
-        $pdf = PDF::loadView('user.printer', compact('data'));
+        $pdf = PDF::loadView('user.printer', compact('data'))->setPaper([0,0, 70.8661, 158.74], 'landscape');
         return $pdf->stream('shipping_label.pdf');
     }
 
