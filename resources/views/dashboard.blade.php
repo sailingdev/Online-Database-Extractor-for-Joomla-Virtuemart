@@ -62,7 +62,7 @@
                     <div class="float-right mb-4 mr-2">
                         <select id="paper" class="form-control" >
                             <option value="1" >A4</option>
-                            <option value="2" >custom</option>
+                            <option value="2" >56 * 25</option>
                         </select>
                     </div>
                     <!-- start dataTable -->
