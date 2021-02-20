@@ -18,7 +18,7 @@ class PrinterController extends Controller
      * @param  int  $id
      * @return \Illuminate\View\View
      */
-    function index($ids){
+    function index($ids, $paperId){
         $database = new DatabaseController();
         $info = Database::where('user_id', Auth::user()->id)->firstOrFail();
         $mysql = @new mysqli(
@@ -26,10 +26,14 @@ class PrinterController extends Controller
         );
         $database->check_db($mysql);
         $tables = $database->check_tbl($mysql, $info['table_prefix']);
-        $data = $this->check_query($mysql, $tables, $ids);
+        $result = $this->check_query($mysql, $tables, $ids);
 //        return view('user.printer', compact('data'));
-
-        $pdf = PDF::loadView('user.printer', compact('data'))->setPaper([0,0, 70.8661, 158.74], 'landscape');
+        $paper = $paperId == 1 ? 'a4': [0,0, 70.8661, 158.74];
+        $data = [
+            'result' => $result,
+            'paperId' => $paperId
+        ];
+        $pdf = PDF::loadView('user.printer', compact('data'))->setPaper($paper, $paperId == 1? 'portrait':'landscape');
         return $pdf->stream('shipping_label.pdf');
     }
 

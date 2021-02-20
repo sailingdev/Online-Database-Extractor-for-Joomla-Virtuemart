@@ -51,13 +51,19 @@
                     <div class="float-left mb-4">
                         <a href="{{route('database.create')}}"><button class="btn btn-info waves-effect waves-light" type="button">Connect DataBase</button></a>
                     </div>
-
                     <div class="float-right mb-4">
-                        <form id="print" method="GET" target="_blank">
-                        </form>
-                        <a href="javascript: print();">
-                                 <i class="icon-printer font-28"></i>
-                         </a>
+                            <form id="print" method="GET" target="_blank">
+
+                            </form>
+                            <a href="javascript: print();">
+                                <i class="icon-printer font-28"></i>
+                            </a>
+                    </div>
+                    <div class="float-right mb-4 mr-2">
+                        <select id="paper" class="form-control" >
+                            <option value="1" >A4</option>
+                            <option value="2" >custom</option>
+                        </select>
                     </div>
                     <!-- start dataTable -->
                      <div class="table-responsive">
@@ -133,7 +139,8 @@
                     buttonsStyling: false,
                 });
             }else {
-                $('#print').attr('action', '/printer/'+checked);
+                let paper = $('#paper').val();
+                $('#print').attr('action', '/printer/'+checked+'/'+paper);
                 $('#print').submit();
             }
         }

@@ -22,7 +22,7 @@ Route::group(['middleware' => 'auth', 'prefix' => '/'], function () {
     Route::get('', 'HomeController@index')->name('index');
     Route::get('/dashboard', [HomeController::class, 'index']);
     Route::resource('database', 'User\DatabaseController');
-    Route::get('printer/{ids}', 'User\PrinterController@index')->name('printer');
+    Route::get('printer/{ids}/{paperId}', 'User\PrinterController@index')->name('printer');
 });
 
 Route::group(['middleware' => ['role:admin']], function() {
