@@ -13,7 +13,7 @@ class Database extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id','host_name', 'database_name', 'table_prefix', 'user_name',
+        'user_id','host_name', 'database_name', 'table_prefix', 'user_name', 'password',
     ];
 
     /**

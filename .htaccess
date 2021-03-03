@@ -1,8 +1,8 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^(www.)?panel.tatamba.com$
-RewriteCond %{REQUEST_URI} !^/
+RewriteCond %{REQUEST_URI} !^/app/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /public/$1
+RewriteRule ^(.*)$ /app/public/$1
 RewriteCond %{HTTP_HOST} ^(www.)?panel.tatamba.com$
-RewriteRule ^(/)?$ public/index.php [L]
+RewriteRule ^(/)?$ app/public/index.php [L]
