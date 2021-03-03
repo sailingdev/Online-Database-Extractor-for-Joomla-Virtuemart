@@ -16,18 +16,18 @@
                         <div class="card bg-pattern">
 
                             <div class="card-body p-4">
-
+                                
                                 <div class="text-center mb-4">
                                     <div class="auth-logo">
                                         <a href="{{route('index')}}" class="logo logo-dark text-center">
                                             <span class="logo-lg">
-                                                <img src="{{asset('public/assets/images/logo-dark.png')}}" alt="" height="22">
+                                                <img src="{{asset('assets/images/logo-dark.png')}}" alt="" height="22">
                                             </span>
                                         </a>
-
+                    
                                         <a href="{{route('index')}}" class="logo logo-light text-center">
                                             <span class="logo-lg">
-                                                <img src="{{asset('public/assets/images/logo-light.png')}}" alt="" height="22">
+                                                <img src="{{asset('assets/images/logo-light.png')}}" alt="" height="22">
                                             </span>
                                         </a>
                                     </div>
@@ -44,13 +44,13 @@
                                                     <label for="emailaddress">Email address</label>
                                                     <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
                                                 </div>
-
+            
                                                 <div class="form-group mb-3">
                                                     <a href="{{route('second', ['auth', 'recoverpw'])}}" class="text-muted font-13 float-right">Forgot your password?</a>
                                                     <label for="password">Password</label>
                                                     <input class="form-control" type="password" required="" id="password" placeholder="Enter your password">
                                                 </div>
-
+            
                                                 <div class="form-group mb-3">
                                                     <button class="btn btn-primary btn-sm float-sm-right" type="submit"> Log In </button>
                                                     <div class="custom-control custom-checkbox pt-1">
@@ -58,7 +58,7 @@
                                                         <label class="custom-control-label" for="checkbox-signin">Remember me</label>
                                                     </div>
                                                 </div>
-
+    
                                             </form>
                                         </div>
                                     </div> <!-- end col -->
@@ -90,7 +90,7 @@
                                                 </div>
                                             </form>
                                         </div>
-
+                                        
                                     </div> <!-- end col -->
                                 </div>
                                 <!-- end row-->
@@ -108,7 +108,7 @@
         <!-- end page -->
 
         <footer class="footer footer-alt">
-            <script>document.write(new Date().getFullYear())</script> &copy; UBold theme by <a href="" class="text-white-50">Coderthemes</a>
+            <script>document.write(new Date().getFullYear())</script> &copy; UBold theme by <a href="" class="text-white-50">Coderthemes</a> 
         </footer>
 
         @include('layouts.shared.footer-script')

@@ -5,7 +5,7 @@
 
         <!-- User box -->
         <div class="user-box text-center">
-            <img src="{{asset('public/assets/images/users/user-1.jpg')}}" alt="user-img" title="Mat Helme"
+            <img src="{{asset('assets/images/users/user-1.jpg')}}" alt="user-img" title="Mat Helme"
                 class="rounded-circle avatar-md">
             <div class="dropdown">
                 <a href="javascript: void(0);" class="text-dark dropdown-toggle h5 mt-2 mb-1 d-block"

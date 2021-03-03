@@ -51,7 +51,7 @@ $bg-topbar-light:                                 #ffffff;
 $bg-topbar-dark:                                  #38414a;
 
 // Leftbar item shadow (Condensed item)
-$box-shadow-condensed:                              3px 5px 10px 0 rgba(154,161,171,.2);
+$box-shadow-condensed:                              3px 5px 10px 0 rgba(154,161,171,.2); 
 
 // Topnav Height (Horizontal)
 $topnav-height:                                     55px;
@@ -87,8 +87,8 @@ $logo-auth-light-display:                           none;
 // User authentication Background
 $auth-bg:                                         #ffffff;
 $auth-bg-alt:                                     #2892fd;
-$auth-img-bg:                                     url("/public/assets/images/bg-auth.jpg");
-$auth-img-pattern-bg:                             url("/public/assets/images/bg-pattern.png");
+$auth-img-bg:                                     url("/assets/images/bg-auth.jpg");
+$auth-img-pattern-bg:                             url("/assets/images/bg-pattern.png");
 
 // Apex chart
 $apex-grid-color:                                 #f9f9fd;
@@ -100,7 +100,7 @@ $chat-secondary-user-bg:                          #f1f3fa;
 // Text-color (h1 to h6)
 $text-color-h:                                    #343a40;
 
-// Card overlay
+// Card overlay 
 $card-overlay-color:                              #3e4852;
 $card-overlay-bg:                                   rgba(#ffffff, 0.8);
 
@@ -117,7 +117,7 @@ $components-shadow-sm:                              none;
 $components-shadow:                                 none;
 $components-shadow-lg:                              none;
 
-// label
+// label 
 $label-font-weight:                                 600;
 
 // Table Head
@@ -125,7 +125,7 @@ $table-head-font-weight:                            700;
 
 //
 // Color system
-//
+// 
 
 $white:    #fff;
 $gray-100: #f3f7f9;
@@ -214,7 +214,7 @@ $theme-colors: map-merge(
     "pink":       $pink,
     "blue":       $blue
   ),  $theme-colors);
-
+  
   // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8%;
 

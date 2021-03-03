@@ -8,8 +8,8 @@ File: Icons Css File
 */
 @font-face {
   font-family: "dripicons-v2";
-  src: url("/public/assets/fonts/dripicons-v2.eot");
-  src: url("/public/assets/fonts/dripicons-v2.eot?#iefix") format("embedded-opentype"), url("/public/assets/fonts/dripicons-v2.woff") format("woff"), url("/public/assets/fonts/dripicons-v2.ttf") format("truetype"), url("/public/assets/fonts/dripicons-v2.svg#dripicons-v2") format("svg");
+  src: url("/assets/fonts/dripicons-v2.eot");
+  src: url("/assets/fonts/dripicons-v2.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/dripicons-v2.woff") format("woff"), url("/assets/fonts/dripicons-v2.ttf") format("truetype"), url("/assets/fonts/dripicons-v2.svg#dripicons-v2") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -841,8 +841,8 @@ File: Icons Css File
 
 @font-face {
   font-family: "Material Design Icons";
-  src: url("/public/assets/fonts/materialdesignicons-webfont.eot?v=5.0.45");
-  src: url("/public/assets/fonts/materialdesignicons-webfont.eot?#iefix&v=5.0.45") format("embedded-opentype"), url("/public/assets/fonts/materialdesignicons-webfont.woff2?v=5.0.45") format("woff2"), url("/public/assets/fonts/materialdesignicons-webfont.woff?v=5.0.45") format("woff"), url("/public/assets/fonts/materialdesignicons-webfont.ttf?v=5.0.45") format("truetype");
+  src: url("/assets/fonts/materialdesignicons-webfont.eot?v=5.0.45");
+  src: url("/assets/fonts/materialdesignicons-webfont.eot?#iefix&v=5.0.45") format("embedded-opentype"), url("/assets/fonts/materialdesignicons-webfont.woff2?v=5.0.45") format("woff2"), url("/assets/fonts/materialdesignicons-webfont.woff?v=5.0.45") format("woff"), url("/assets/fonts/materialdesignicons-webfont.ttf?v=5.0.45") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -21138,9 +21138,9 @@ File: Icons Css File
 }
 @font-face {
   font-family: "feather";
-  src: url("/public/assets/fonts/feather.eot?t=1525787366991");
+  src: url("/assets/fonts/feather.eot?t=1525787366991");
   /* IE9*/
-  src: url("/public/assets/fonts/feather.eot?t=1525787366991#iefix") format("embedded-opentype"), url("/public/assets/fonts/feather.woff?t=1525787366991") format("woff"), url("/public/assets/fonts/feather.ttf?t=1525787366991") format("truetype"), url("/public/assets/fonts/feather.svg?t=1525787366991#feather") format("svg");
+  src: url("/assets/fonts/feather.eot?t=1525787366991#iefix") format("embedded-opentype"), url("/assets/fonts/feather.woff?t=1525787366991") format("woff"), url("/assets/fonts/feather.ttf?t=1525787366991") format("truetype"), url("/assets/fonts/feather.svg?t=1525787366991#feather") format("svg");
   /* iOS 4.1- */
 }
 [class^=fe-] {
@@ -22247,8 +22247,8 @@ File: Icons Css File
 
 @font-face {
   font-family: "themify";
-  src: url("/public/assets/fonts/themify.eot?-fvbane");
-  src: url("/public/assets/fonts/themify.eot?#iefix-fvbane") format("embedded-opentype"), url("/public/assets/fonts/themify.woff?-fvbane") format("woff"), url("/public/assets/fonts/themify.ttf?-fvbane") format("truetype"), url("/public/assets/fonts/themify.svg?-fvbane#themify") format("svg");
+  src: url("/assets/fonts/themify.eot?-fvbane");
+  src: url("/assets/fonts/themify.eot?#iefix-fvbane") format("embedded-opentype"), url("/assets/fonts/themify.woff?-fvbane") format("woff"), url("/assets/fonts/themify.ttf?-fvbane") format("truetype"), url("/assets/fonts/themify.svg?-fvbane#themify") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -29674,8 +29674,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("/public/assets/fonts/fa-brands-400.eot");
-  src: url("/public/assets/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/public/assets/fonts/fa-brands-400.woff2") format("woff2"), url("/public/assets/fonts/fa-brands-400.woff") format("woff"), url("/public/assets/fonts/fa-brands-400.ttf") format("truetype"), url("/public/assets/fonts/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("/assets/fonts/fa-brands-400.eot");
+  src: url("/assets/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/fa-brands-400.woff2") format("woff2"), url("/assets/fonts/fa-brands-400.woff") format("woff"), url("/assets/fonts/fa-brands-400.ttf") format("truetype"), url("/assets/fonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 .fab {
   font-family: "Font Awesome 5 Brands";
@@ -29687,8 +29687,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("/public/assets/fonts/fa-regular-400.eot");
-  src: url("/public/assets/fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/public/assets/fonts/fa-regular-400.woff2") format("woff2"), url("/public/assets/fonts/fa-regular-400.woff") format("woff"), url("/public/assets/fonts/fa-regular-400.ttf") format("truetype"), url("/public/assets/fonts/fa-regular-400.svg#fontawesome") format("svg");
+  src: url("/assets/fonts/fa-regular-400.eot");
+  src: url("/assets/fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/fa-regular-400.woff2") format("woff2"), url("/assets/fonts/fa-regular-400.woff") format("woff"), url("/assets/fonts/fa-regular-400.ttf") format("truetype"), url("/assets/fonts/fa-regular-400.svg#fontawesome") format("svg");
 }
 .far {
   font-family: "Font Awesome 5 Free";
@@ -29700,8 +29700,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("/public/assets/fonts/fa-solid-900.eot");
-  src: url("/public/assets/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/public/assets/fonts/fa-solid-900.woff2") format("woff2"), url("/public/assets/fonts/fa-solid-900.woff") format("woff"), url("/public/assets/fonts/fa-solid-900.ttf") format("truetype"), url("/public/assets/fonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("/assets/fonts/fa-solid-900.eot");
+  src: url("/assets/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/fa-solid-900.woff2") format("woff2"), url("/assets/fonts/fa-solid-900.woff") format("woff"), url("/assets/fonts/fa-solid-900.ttf") format("truetype"), url("/assets/fonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 .fa,
 .fas {
@@ -29711,8 +29711,8 @@ readers do not read off random characters that represent icons */
 
 @font-face {
   font-family: "simple-line-icons";
-  src: url("/public/assets/fonts/simple-Line-Icons.eot?-i3a2kk");
-  src: url("/public/assets/fonts/simple-Line-Icons.eot?#iefix-i3a2kk") format("embedded-opentype"), url("/public/assets/fonts/simple-Line-Icons.ttf?-i3a2kk") format("truetype"), url("/public/assets/fonts/simple-Line-Icons.woff2?-i3a2kk") format("woff2"), url("/public/assets/fonts/simple-Line-Icons.woff?-i3a2kk") format("woff"), url("/public/assets/fonts/simple-Line-Icons.svg?-i3a2kk#simple-line-icons") format("svg");
+  src: url("/assets/fonts/simple-Line-Icons.eot?-i3a2kk");
+  src: url("/assets/fonts/simple-Line-Icons.eot?#iefix-i3a2kk") format("embedded-opentype"), url("/assets/fonts/simple-Line-Icons.ttf?-i3a2kk") format("truetype"), url("/assets/fonts/simple-Line-Icons.woff2?-i3a2kk") format("woff2"), url("/assets/fonts/simple-Line-Icons.woff?-i3a2kk") format("woff"), url("/assets/fonts/simple-Line-Icons.svg?-i3a2kk#simple-line-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -30484,8 +30484,8 @@ readers do not read off random characters that represent icons */
  */
 @font-face {
   font-family: "weathericons";
-  src: url("/public/assets/fonts/weathericons-regular-webfont.eot");
-  src: url("/public/assets/fonts/weathericons-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/public/assets/fonts/weathericons-regular-webfont.woff2") format("woff2"), url("/public/assets/fonts/weathericons-regular-webfont.woff") format("woff"), url("/public/assets/fonts/weathericons-regular-webfont.ttf") format("truetype"), url("/public/assets/fonts/weathericons-regular-webfont.svg#weather_iconsregular") format("svg");
+  src: url("/assets/fonts/weathericons-regular-webfont.eot");
+  src: url("/assets/fonts/weathericons-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/weathericons-regular-webfont.woff2") format("woff2"), url("/assets/fonts/weathericons-regular-webfont.woff") format("woff"), url("/assets/fonts/weathericons-regular-webfont.ttf") format("truetype"), url("/assets/fonts/weathericons-regular-webfont.svg#weather_iconsregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
