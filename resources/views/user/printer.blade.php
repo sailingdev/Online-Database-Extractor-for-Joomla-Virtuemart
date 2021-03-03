@@ -59,7 +59,7 @@
             @if($i%14==0)
                 <table class="tbl pagebreak">
             @endif
-            <tr>
+        <tr>
             <td>
                 {{utf8_encode($data['result'][$i]['order_number'])}} <br>
                 {{utf8_encode($data['result'][$i]['first_name'])}} {{utf8_encode($data['result'][$i]['last_name'])}} <br>
@@ -68,13 +68,16 @@
                 {{utf8_encode($data['result'][$i]['country'])}} <br>
                 T: {{utf8_encode($data['result'][$i]['mobile_phone'])}}
             </td>
+
             <td>
+                @if($i < count($data['result'])-1)
                 {{utf8_encode($data['result'][$i+1]['order_number'])}} <br>
                 {{utf8_encode($data['result'][$i+1]['first_name'])}} {{utf8_encode($data['result'][$i+1]['last_name'])}} <br>
                 {{utf8_encode($data['result'][$i+1]['address_1'])}} <br>
                 {{utf8_encode($data['result'][$i+1]['zip'])}} {{utf8_encode($data['result'][$i+1]['city'])}} ({{utf8_encode($data['result'][$i+1]['state'])}}) <br>
                 {{utf8_encode($data['result'][$i+1]['country'])}} <br>
                 T: {{utf8_encode($data['result'][$i+1]['mobile_phone'])}}
+                @endif
             </td>
         </tr>
         @endfor

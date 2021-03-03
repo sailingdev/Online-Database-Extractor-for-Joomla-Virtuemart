@@ -36,23 +36,38 @@ class DatabaseController extends Controller
                     $el = '<input type="checkbox" name="order_id" style="vertical-align:middle" value="'.$row['order_id'].'" />';
                     return $el;
                 })
+                ->addColumn('order_id', function($row){
+                    return utf8_encode($row['order_id']);
+                })
+                ->addColumn('order_number', function($row){
+                    return utf8_encode($row['order_number']);
+                })
                 ->addColumn('name_email', function($row){
                     $elements =explode("/", $row['name_email']);
                     $count = count($elements);
-                    $btn = $count ==2 ? $elements[0]."<br>".$elements[1] : $elements[0];
+                    $btn = $count == 2 ? $elements[0]."<br>".$elements[1] : $elements[0];
                     return utf8_encode($btn);
                 })
-                ->addColumn('status', function($row){
-                    $btn = str_replace("COM_VIRTUEMART_ORDER_STATUS_", "", $row['status']);
-                    return $btn;
+                ->addColumn('payment_method', function($row){
+                    return utf8_encode($row['payment_method']);
+                })
+                ->addColumn('shipment', function($row){
+                    return utf8_encode($row['shipment']);
                 })
                 ->addColumn('order_date', function ($row){
-                    $btn = date_format(date_create($row['order_date']), "l, d F Y H:i");
-                    return $btn;
+                    $order_date = date_format(date_create($row['order_date']), "l, d F Y H:i");
+                    return utf8_encode($order_date);
                 })
                 ->addColumn('last_modified', function ($row){
-                    $btn = date_format(date_create($row['last_modified']), "l, d F Y H:i");
-                    return $btn;
+                    $date = date_format(date_create($row['last_modified']), "l, d F Y H:i");
+                    return utf8_encode($date);
+                })
+                ->addColumn('status', function($row){
+                    $status = str_replace("COM_VIRTUEMART_ORDER_STATUS_", "", $row['status']);
+                    return utf8_encode($status);
+                })
+                ->addColumn('total', function($row){
+                    return utf8_encode($row['total']);
                 })
                 ->escapeColumns([])
                 ->make(true);
