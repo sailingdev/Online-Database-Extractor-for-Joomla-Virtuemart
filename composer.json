@@ -17,7 +17,8 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "spatie/laravel-permission": "^4.0",
-        "yajra/laravel-datatables-oracle": "^9.15"
+        "yajra/laravel-datatables-oracle": "^9.15",
+      "ext-mysqli": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

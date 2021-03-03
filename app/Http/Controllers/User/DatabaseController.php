@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
-use http\Message;
 use Illuminate\Http\Request;
 use App\Database;
 use App\Rules\ValidPrefix;
@@ -19,7 +18,7 @@ class DatabaseController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      * @throws ValidationException
      */
     public function index()
@@ -85,10 +84,11 @@ class DatabaseController extends Controller
             'database_name' => 'required',
             'table_prefix' => ['required', new ValidPrefix],
             'user_name' => 'required',
+            'password' => 'nullable'
         ]);
         $validated = Arr::prepend($validated, Auth::user()->id, 'user_id');
         $mysql = @new mysqli(
-            $validated['host_name'], $validated['user_name'], '', $validated['database_name']
+            $validated['host_name'], $validated['user_name'], $validated['password'], $validated['database_name']
         );
         $this->check_db($mysql);
         $tables = $this->check_tbl($mysql, $validated['table_prefix']);
