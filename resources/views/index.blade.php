@@ -9,16 +9,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="{{asset('public/assets/images/favicon.ico')}}">
+        <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}">
 
         <!-- Bootstrap core CSS -->
-        <link href="{{asset('public/assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+        <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
 
         <!--Material Icon -->
-        <link href="{{asset('public/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
 
         <!-- Custom  sCss -->
-        <link href="{{asset('public/assets/css/landing.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('assets/css/landing.min.css')}}" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -29,8 +29,8 @@
             <div class="container-fluid">
                 <!-- LOGO -->
                 <a class="logo text-uppercase" href="index.html">
-                    <img src="{{asset('public/assets/images/landing/logo-light.png')}}" alt="" class="logo-light" height="21" />
-                    <img src="{{asset('public/assets/images/landing/logo-dark.png')}}" alt="" class="logo-dark" height="21" />
+                    <img src="{{asset('assets/images/landing/logo-light.png')}}" alt="" class="logo-light" height="21" />
+                    <img src="{{asset('assets/images/landing/logo-dark.png')}}" alt="" class="logo-dark" height="21" />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +88,7 @@
                                 </div>
                             </div>
                             <div class="col-md-7 text-right">
-                                <img src="{{asset('public/assets/images/landing/main.png')}}" class="img-fluid shadow-lg animate">
+                                <img src="{{asset('assets/images/landing/main.png')}}" class="img-fluid shadow-lg animate">
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                     <div class="col-lg-4">
                         <div class="features-box">
                             <div class="features-img mb-3">
-                                <img src="{{asset('public/assets/images/landing/icons/browsercode.png')}}" alt="">
+                                <img src="{{asset('assets/images/landing/icons/browsercode.png')}}" alt="">
                             </div>
                             <h4 class="mb-2">Multiple Demos with flexible layouts</h4>
                             <p class="text-muted">
@@ -128,7 +128,7 @@
                     <div class="col-lg-4">
                         <div class="features-box">
                             <div class="features-img mb-3">
-                                <img src="{{asset('public/assets/images/landing/icons/webdesign.png')}}" alt="">
+                                <img src="{{asset('assets/images/landing/icons/webdesign.png')}}" alt="">
                             </div>
                             <h4 class="mb-2">Clean & Modern Design</h4>
                             <p class="text-muted">Beautifully crafted, clean & modern designed apps, pages, UI elements.</p>
@@ -138,7 +138,7 @@
                     <div class="col-lg-4">
                         <div class="features-box">
                             <div class="features-img mb-3">
-                                <img src="{{asset('public/assets/images/landing/icons/paperdesk.png')}}" alt="">
+                                <img src="{{asset('assets/images/landing/icons/paperdesk.png')}}" alt="">
                             </div>
                             <h4 class="mb-2">10+ Applications</h4>
                             <p class="text-muted">Ready to use apps pages for Chat, CRM, Email, Social Feed, Projects, Tasks, Support Tickets, File Manager, etc.</p>
@@ -152,7 +152,7 @@
                     <div class="col-lg-4">
                         <div class="features-box">
                             <div class="features-img mb-3">
-                                <img src="{{asset('public/assets/images/landing/icons/browserscript.png')}}" alt="">
+                                <img src="{{asset('assets/images/landing/icons/browserscript.png')}}" alt="">
                             </div>
                             <h4 class="mb-2">Quality Code</h4>
                             <p class="text-muted">Well-documented and well-commented source to understand the code easily.</p>
@@ -162,7 +162,7 @@
                     <div class="col-lg-4">
                         <div class="features-box">
                             <div class="features-img mb-3">
-                                <img src="{{asset('public/assets/images/landing/icons/cloudplug.png')}}" alt="">
+                                <img src="{{asset('assets/images/landing/icons/cloudplug.png')}}" alt="">
                             </div>
                             <h4 class="mb-2">Free Updates</h4>
                             <p class="text-muted">Free lifetime updates including new features and bug fixes.</p>
@@ -172,7 +172,7 @@
                     <div class="col-lg-4">
                         <div class="features-box">
                             <div class="features-img mb-3">
-                                <img src="{{asset('public/assets/images/landing/icons/phonesent.png')}}" alt="">
+                                <img src="{{asset('assets/images/landing/icons/phonesent.png')}}" alt="">
                             </div>
                             <h4 class="mb-2">Customer Support</h4>
                             <p class="text-muted">Get access to premium customer support from the actual people who have created.</p>
@@ -202,7 +202,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="shadow bg-white mt-4 p-2 rounded">
                             <a href="{{route('any', ['dashboard'])}}" class="text-dark">
-                                <img src="{{asset('public/assets/images/landing/demo/layout-1.png')}}" alt="" class="img-fluid mx-auto d-block">
+                                <img src="{{asset('assets/images/landing/demo/layout-1.png')}}" alt="" class="img-fluid mx-auto d-block">
                                 <h5 class="mb-0 py-2 text-center">Default (Vertical)</h5>
                                 <div class="my-2 text-center">
                                     <a class="btn btn-success font-weight-bold btn-sm" href="{{route('any', ['dashboard'])}}" target="_blank">Light</a>
@@ -216,7 +216,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="shadow bg-white mt-4 p-2 animate rounded">
                             <a href="{{route('second', ['themes', 'creative'])}}" class="text-dark">
-                                <img src="{{asset('public/assets/images/landing/demo/layout-2.png')}}" alt="" class="img-fluid mx-auto d-block">
+                                <img src="{{asset('assets/images/landing/demo/layout-2.png')}}" alt="" class="img-fluid mx-auto d-block">
                                 <h5 class="mb-0 py-2 text-center">Creative (Horizontal)</h5>
                                 <div class="my-2 text-center">
                                     <a class="btn btn-success font-weight-bold btn-sm" href="{{route('second', ['themes', 'creative'])}}" target="_blank">Light</a>
@@ -230,7 +230,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="shadow bg-white mt-4 p-2 animate rounded">
                             <a href="{{route('second', ['themes', 'material'])}}" class="text-dark">
-                                <img src="{{asset('public/assets/images/landing/demo/layout-3.png')}}" alt="" class="img-fluid mx-auto d-block">
+                                <img src="{{asset('assets/images/landing/demo/layout-3.png')}}" alt="" class="img-fluid mx-auto d-block">
                                 <h5 class="mb-0 py-2 text-center">Material</h5>
                                 <div class="my-2 text-center">
                                     <a class="btn btn-success font-weight-bold btn-sm" href="{{route('second', ['themes', 'material'])}}" target="_blank">Light</a>
@@ -244,7 +244,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="shadow bg-white mt-4 p-2 animate rounded">
                             <a href="{{route('second', ['themes', 'modern'])}}" class="text-dark">
-                                <img src="{{asset('public/assets/images/landing/demo/layout-4.png')}}" alt="" class="img-fluid mx-auto d-block">
+                                <img src="{{asset('assets/images/landing/demo/layout-4.png')}}" alt="" class="img-fluid mx-auto d-block">
                                 <h5 class="mb-0 py-2 text-center">Modern (Detached)</h5>
                                 <div class="my-2 text-center">
                                     <a class="btn btn-success font-weight-bold btn-sm" href="{{route('second', ['themes', 'modern'])}}" target="_blank">Light</a>
@@ -258,7 +258,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="shadow bg-white mt-4 p-2 animate rounded">
                             <a href="{{route('second', ['themes', 'saas'])}}" class="text-dark">
-                                <img src="{{asset('public/assets/images/landing/demo/layout-6.png')}}" alt="" class="img-fluid mx-auto d-block">
+                                <img src="{{asset('assets/images/landing/demo/layout-6.png')}}" alt="" class="img-fluid mx-auto d-block">
                                 <h5 class="mb-0 py-2 text-center">Saas (Two-Column)</h5>
                                 <div class="my-2 text-center">
                                     <a class="btn btn-success font-weight-bold btn-sm" href="{{route('second', ['themes', 'saas'])}}" target="_blank">Light</a>
@@ -272,7 +272,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="shadow bg-white mt-4 p-2 animate rounded">
                             <a href="{{route('second', ['themes', 'purple'])}}" class="text-dark">
-                                <img src="{{asset('public/assets/images/landing/demo/layout-5.png')}}" alt="" class="img-fluid mx-auto d-block">
+                                <img src="{{asset('assets/images/landing/demo/layout-5.png')}}" alt="" class="img-fluid mx-auto d-block">
                                 <h5 class="mb-0 py-2 text-center">Purple</h5>
                                 <div class="my-2 text-center">
                                     <a class="btn btn-success font-weight-bold btn-sm" href="{{route('second', ['themes', 'purple'])}}" target="_blank">Light</a>
@@ -394,7 +394,7 @@
                     <div class="col-md-4">
                         <div class="pr-lg-4">
                             <div class="mb-4">
-                                <img src="{{asset('public/assets/images/landing/logo-dark.png')}}" alt="" height="20">
+                                <img src="{{asset('assets/images/landing/logo-dark.png')}}" alt="" height="20">
                             </div>
                             <p class="text">Ubold makes it easier to build better websites with great speed. Save hundreds of hours of design and development by using it.</p>
                         </div>
@@ -428,7 +428,7 @@
         <a href="#" class="back-to-top" id="back-to-top"> <i class="mdi mdi-chevron-up"> </i> </a>
 
         <!-- javascript -->
-        <script src="{{asset('public/assets/js/vendor.min.js')}}"></script>
+        <script src="{{asset('assets/js/vendor.min.js')}}"></script>
 
         <!-- custom js -->
         <script type="text/javascript">

@@ -21,20 +21,20 @@
                                     <div class="auth-logo">
                                         <a href="{{route('index')}}" class="logo logo-dark text-center">
                                             <span class="logo-lg">
-                                                <img src="{{asset('public/assets/images/logo-dark.png')}}" alt="" height="22">
+                                                <img src="{{asset('assets/images/logo-dark.png')}}" alt="" height="22">
                                             </span>
                                         </a>
                     
                                         <a href="{{route('index')}}" class="logo logo-light text-center">
                                             <span class="logo-lg">
-                                                <img src="{{asset('public/assets/images/logo-light.png')}}" alt="" height="22">
+                                                <img src="{{asset('assets/images/logo-light.png')}}" alt="" height="22">
                                             </span>
                                         </a>
                                     </div>
                                 </div>
 
                                 <div class="text-center w-75 m-auto">
-                                    <img src="{{asset('public/assets/images/users/user-1.jpg')}}" height="88" alt="user-image" class="rounded-circle shadow">
+                                    <img src="{{asset('assets/images/users/user-1.jpg')}}" height="88" alt="user-image" class="rounded-circle shadow">
                                     <h4 class="text-dark-50 text-center mt-3">Hi ! Geneva </h4>
                                     <p class="text-muted mb-4">Enter your password to access the admin.</p>
                                 </div>

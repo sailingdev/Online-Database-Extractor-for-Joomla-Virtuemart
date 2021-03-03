@@ -8,7 +8,7 @@
                 <!-- LOGO -->
                 <a href="{{route('index')}}" class="logo">
                     <span>
-                        <img src="{{asset('public/assets/images/logo-sm-light.png')}}"alt="" height="28">
+                        <img src="{{asset('assets/images/logo-sm-light.png')}}"alt="" height="28">
                     </span>
                 </a>
                 <nav class="nav flex-column" id="two-col-sidenav-main">

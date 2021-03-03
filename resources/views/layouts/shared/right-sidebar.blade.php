@@ -62,7 +62,7 @@
                   <a href="javascript: void(0);" class="text-reset notification-item">
                       <div class="media">
                           <div class="position-relative mr-2">
-                              <img src="{{asset('public/assets/images/users/user-10.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
+                              <img src="{{asset('assets/images/users/user-10.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
                               <i class="mdi mdi-circle user-status online"></i>
                           </div>
                           <div class="media-body overflow-hidden">
@@ -77,7 +77,7 @@
                   <a href="javascript: void(0);" class="text-reset notification-item">
                       <div class="media">
                           <div class="position-relative mr-2">
-                              <img src="{{asset('public/assets/images/users/user-1.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
+                              <img src="{{asset('assets/images/users/user-1.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
                               <i class="mdi mdi-circle user-status away"></i>
                           </div>
                           <div class="media-body overflow-hidden">
@@ -92,7 +92,7 @@
                   <a href="javascript: void(0);" class="text-reset notification-item">
                       <div class="media">
                           <div class="position-relative mr-2">
-                              <img src="{{asset('public/assets/images/users/user-9.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
+                              <img src="{{asset('assets/images/users/user-9.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
                               <i class="mdi mdi-circle user-status busy"></i>
                           </div>
                           <div class="media-body overflow-hidden">
@@ -111,7 +111,7 @@
                   <a href="javascript: void(0);" class="text-reset notification-item">
                       <div class="media">
                           <div class="position-relative mr-2">
-                              <img src="{{asset('public/assets/images/users/user-2.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
+                              <img src="{{asset('assets/images/users/user-2.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
                               <i class="mdi mdi-circle user-status online"></i>
                           </div>
                           <div class="media-body overflow-hidden">
@@ -126,7 +126,7 @@
                   <a href="javascript: void(0);" class="text-reset notification-item">
                       <div class="media">
                           <div class="position-relative mr-2">
-                              <img src="{{asset('public/assets/images/users/user-4.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
+                              <img src="{{asset('assets/images/users/user-4.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
                               <i class="mdi mdi-circle user-status away"></i>
                           </div>
                           <div class="media-body overflow-hidden">
@@ -141,7 +141,7 @@
                   <a href="javascript: void(0);" class="text-reset notification-item">
                       <div class="media">
                           <div class="position-relative mr-2">
-                              <img src="{{asset('public/assets/images/users/user-5.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
+                              <img src="{{asset('assets/images/users/user-5.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
                               <i class="mdi mdi-circle user-status online"></i>
                           </div>
                           <div class="media-body overflow-hidden">
@@ -156,7 +156,7 @@
                   <a href="javascript: void(0);" class="text-reset notification-item">
                       <div class="media">
                           <div class="position-relative mr-2">
-                              <img src="{{asset('public/assets/images/users/user-6.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
+                              <img src="{{asset('assets/images/users/user-6.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
                               <i class="mdi mdi-circle user-status online"></i>
                           </div>
                           <div class="media-body overflow-hidden">
@@ -171,7 +171,7 @@
                   <a href="javascript: void(0);" class="text-reset notification-item">
                       <div class="media">
                           <div class="position-relative mr-2">
-                              <img src="{{asset('public/assets/images/users/user-7.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
+                              <img src="{{asset('assets/images/users/user-7.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
                               <i class="mdi mdi-circle user-status busy"></i>
                           </div>
                           <div class="media-body overflow-hidden">
@@ -186,7 +186,7 @@
                   <a href="javascript: void(0);" class="text-reset notification-item">
                       <div class="media">
                           <div class="position-relative mr-2">
-                              <img src="{{asset('public/assets/images/users/user-8.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
+                              <img src="{{asset('assets/images/users/user-8.jpg')}}" class="rounded-circle avatar-sm" alt="user-pic">
                               <i class="mdi mdi-circle user-status away"></i>
                           </div>
                           <div class="media-body overflow-hidden">

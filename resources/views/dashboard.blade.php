@@ -1,8 +1,8 @@
 @extends('layouts.vertical', ['title' => 'Dashboard'])
 
 @section('css')
-    <link href="{{asset('public/assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('public/assets/libs/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/libs/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css" />
     <style>
         #dataTable tbody tr td {
             vertical-align: middle;
@@ -95,8 +95,8 @@
 @endsection
 
 @section('script')
-    <script src="{{asset('public/assets/libs/datatables/datatables.min.js')}}"></script>
-    <script src="{{asset('public/assets/libs/sweetalert2/sweetalert2.min.js')}}"></script>
+    <script src="{{asset('assets/libs/datatables/datatables.min.js')}}"></script>
+    <script src="{{asset('assets/libs/sweetalert2/sweetalert2.min.js')}}"></script>
     <script>
         @if($db_status)
         $('#dataTable').DataTable({

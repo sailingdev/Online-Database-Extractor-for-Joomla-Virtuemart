@@ -5,4 +5,4 @@
 <meta content="Coderthemes" name="author" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <!-- App favicon -->
-<link rel="shortcut icon" href="{{asset('public/assets/images/favicon.ico')}}">
+<link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}">
