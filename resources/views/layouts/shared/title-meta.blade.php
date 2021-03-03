@@ -6,4 +6,4 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <!-- App favicon -->
-<link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}">
+<link rel="shortcut icon" href="{{asset('public/assets/images/favicon.ico')}}">

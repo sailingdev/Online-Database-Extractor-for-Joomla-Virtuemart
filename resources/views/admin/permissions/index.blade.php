@@ -1,7 +1,7 @@
 @extends('layouts.vertical', ['title' => 'Permissions'])
 
 @section('css')
-    <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('public/assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
 @endsection
 
 @section('content')
@@ -45,7 +45,7 @@
 @endsection
 
 @section('script')
-    <script src="{{asset('assets/libs/datatables/datatables.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/datatables/datatables.min.js')}}"></script>
     <script>
         $('#dataTable').DataTable({
             'processing': true,

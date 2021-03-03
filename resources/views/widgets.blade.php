@@ -2,14 +2,14 @@
 
 @section('css')
     <!-- Plugins css -->
-    <link href="{{asset('assets/libs/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('public/assets/libs/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css" />
 
 @endsection
 
 @section('content')
     <!-- Start Content-->
     <div class="container-fluid">
-        
+
         <!-- start page title -->
         <div class="row">
             <div class="col-12">
@@ -24,8 +24,8 @@
                     <h4 class="page-title">Widgets</h4>
                 </div>
             </div>
-        </div>     
-        <!-- end page title --> 
+        </div>
+        <!-- end page title -->
 
         <div class="row">
             <div class="col-md-6 col-xl-3">
@@ -217,7 +217,7 @@
                     </div> <!-- end row -->
                 </div> <!-- end card-box-->
             </div> <!-- end col-->
-        </div>    
+        </div>
         <!-- end row-->
 
         <div class="row">
@@ -362,7 +362,7 @@
                     </div>
                 </div> <!-- end card-box-->
             </div> <!-- end col -->
-            
+
         </div>
         <!-- end row -->
 
@@ -373,7 +373,7 @@
                     <div class="row align-items-center">
                         <div class="col-auto">
                             <div class="avatar-lg">
-                                <img src="{{asset('assets/images/users/user-3.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
+                                <img src="{{asset('public/assets/images/users/user-3.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
                             </div>
                         </div>
                         <div class="col">
@@ -389,7 +389,7 @@
                     <div class="row align-items-center">
                         <div class="col-auto">
                             <div class="avatar-lg">
-                                <img src="{{asset('assets/images/users/user-4.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
+                                <img src="{{asset('public/assets/images/users/user-4.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
                             </div>
                         </div>
                         <div class="col">
@@ -405,7 +405,7 @@
                     <div class="row align-items-center">
                         <div class="col-auto">
                             <div class="avatar-lg">
-                                <img src="{{asset('assets/images/users/user-5.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
+                                <img src="{{asset('public/assets/images/users/user-5.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
                             </div>
                         </div>
                         <div class="col">
@@ -421,7 +421,7 @@
                     <div class="row align-items-center">
                         <div class="col-auto">
                             <div class="avatar-lg">
-                                <img src="{{asset('assets/images/users/user-6.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
+                                <img src="{{asset('public/assets/images/users/user-6.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
                             </div>
                         </div>
                         <div class="col">
@@ -461,7 +461,7 @@
 
                         <div class="inbox-widget" data-simplebar style="max-height: 407px;">
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-2.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-2.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Tomaslau</p>
                                 <p class="inbox-item-text">I've finished it! See you so...</p>
                                 <p class="inbox-item-date">
@@ -469,7 +469,7 @@
                                 </p>
                             </div>
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-3.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-3.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Stillnotdavid</p>
                                 <p class="inbox-item-text">This theme is awesome!</p>
                                 <p class="inbox-item-date">
@@ -477,7 +477,7 @@
                                 </p>
                             </div>
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-4.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-4.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Kurafire</p>
                                 <p class="inbox-item-text">Nice to meet you</p>
                                 <p class="inbox-item-date">
@@ -486,7 +486,7 @@
                             </div>
 
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-5.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-5.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Shahedk</p>
                                 <p class="inbox-item-text">Hey! there I'm available...</p>
                                 <p class="inbox-item-date">
@@ -494,7 +494,7 @@
                                 </p>
                             </div>
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-6.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-6.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Adhamdannaway</p>
                                 <p class="inbox-item-text">This theme is awesome!</p>
                                 <p class="inbox-item-date">
@@ -503,7 +503,7 @@
                             </div>
 
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-3.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-3.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Stillnotdavid</p>
                                 <p class="inbox-item-text">This theme is awesome!</p>
                                 <p class="inbox-item-date">
@@ -511,7 +511,7 @@
                                 </p>
                             </div>
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-4.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-4.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Kurafire</p>
                                 <p class="inbox-item-text">Nice to meet you</p>
                                 <p class="inbox-item-date">
@@ -545,7 +545,7 @@
                                 <ul class="conversation-list">
                                     <li class="clearfix">
                                         <div class="chat-avatar">
-                                            <img src="{{asset('assets/images/users/user-5.jpg')}}" alt="male">
+                                            <img src="{{asset('public/assets/images/users/user-5.jpg')}}" alt="male">
                                             <i>10:00</i>
                                         </div>
                                         <div class="conversation-text">
@@ -559,7 +559,7 @@
                                     </li>
                                     <li class="clearfix odd">
                                         <div class="chat-avatar">
-                                            <img src="{{asset('assets/images/users/user-1.jpg')}}" alt="Female">
+                                            <img src="{{asset('public/assets/images/users/user-1.jpg')}}" alt="Female">
                                             <i>10:01</i>
                                         </div>
                                         <div class="conversation-text">
@@ -573,7 +573,7 @@
                                     </li>
                                     <li class="clearfix">
                                         <div class="chat-avatar">
-                                            <img src="{{asset('assets/images/users/user-5.jpg')}}" alt="male">
+                                            <img src="{{asset('public/assets/images/users/user-5.jpg')}}" alt="male">
                                             <i>10:01</i>
                                         </div>
                                         <div class="conversation-text">
@@ -587,7 +587,7 @@
                                     </li>
                                     <li class="clearfix odd">
                                         <div class="chat-avatar">
-                                            <img src="{{asset('assets/images/users/user-1.jpg')}}" alt="male">
+                                            <img src="{{asset('public/assets/images/users/user-1.jpg')}}" alt="male">
                                             <i>10:02</i>
                                         </div>
                                         <div class="conversation-text">
@@ -655,7 +655,7 @@
                             <form name="todo-form" id="todo-form" class="needs-validation mt-3" novalidate>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" id="todo-input-text" name="todo-input-text" class="form-control" 
+                                        <input type="text" id="todo-input-text" name="todo-input-text" class="form-control"
                                             placeholder="Add new todo" required>
                                         <div class="invalid-feedback">
                                             Please enter your task name
@@ -697,7 +697,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mt-4">
                         <span data-plugin="peity-bar" data-colors="#f7b84b,#ebeff2" data-width="100%" data-height="45">5,3,9,6,5,9,7,3,5,2,9,7,2,1,3,5,2,9,7,2,5,3,9,6,5,9,7</span>
                     </div>
@@ -719,7 +719,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mt-4 text-center">
                         <span data-plugin="peity-line" data-fill="transparent" data-stroke="#4a81d4" data-width="100%" data-height="48">5,3,9,6,5,9,7,3,5,2</span>
                     </div>
@@ -741,7 +741,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mt-4">
                         <span data-plugin="peity-line" data-fill="#1abc9c" data-stroke="#1abc9c" data-width="100%" data-height="48">3,5,2,9,7,2,5,3,9,6,5,9,7</span>
                     </div>
@@ -776,7 +776,7 @@
                                 <h4>$14.5k</h4>
                             </div>
                         </div> <!-- end row -->
-                        
+
                     </div>
                 </div> <!-- end card-box -->
             </div> <!-- end col-->
@@ -804,7 +804,7 @@
                                 <h4>514</h4>
                             </div>
                         </div> <!-- end row -->
-                        
+
                     </div>
                 </div> <!-- end card-box -->
             </div> <!-- end col-->
@@ -832,7 +832,7 @@
                                 <h4>10.2k</h4>
                             </div>
                         </div> <!-- end row -->
-                        
+
                     </div>
                 </div> <!-- end card-box -->
             </div> <!-- end col-->
@@ -870,7 +870,7 @@
                                         <h4><i class="fe-arrow-down text-danger mr-1"></i>$9.8k</h4>
                                     </div>
                                 </div> <!-- end row -->
-                                
+
                             </div>
                         </div> <!-- collapsed end -->
                     </div> <!-- end card-body -->
@@ -950,15 +950,15 @@
 
 @section('script')
     <!-- Plugins js-->
-    <script src="{{asset('assets/libs/peity/peity.min.js')}}"></script>
-    <script src="{{asset('assets/libs/jquery-knob/jquery-knob.min.js')}}"></script>
-    <script src="{{asset('assets/libs/jquery-sparkline/jquery-sparkline.min.js')}}"></script>
-    <script src="{{asset('assets/libs/moment/moment.min.js')}}"></script>
-    <script src="{{asset('assets/libs/jquery.scrollto/jquery.scrollto.min.js')}}"></script>
-    <script src="{{asset('assets/libs/sweetalert2/sweetalert2.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/peity/peity.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/jquery-knob/jquery-knob.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/jquery-sparkline/jquery-sparkline.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/moment/moment.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/jquery.scrollto/jquery.scrollto.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/sweetalert2/sweetalert2.min.js')}}"></script>
 
     <!-- Page js-->
-    <script src="{{asset('assets/js/pages/jquery.chat.js')}}"></script>
-    <script src="{{asset('assets/js/pages/jquery.todo.js')}}"></script>
-    <script src="{{asset('assets/js/pages/widgets.init.js')}}"></script>
+    <script src="{{asset('public/assets/js/pages/jquery.chat.js')}}"></script>
+    <script src="{{asset('public/assets/js/pages/jquery.todo.js')}}"></script>
+    <script src="{{asset('public/assets/js/pages/widgets.init.js')}}"></script>
 @endsection

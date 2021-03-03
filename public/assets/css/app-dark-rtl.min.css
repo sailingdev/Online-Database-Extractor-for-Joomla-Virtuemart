@@ -9,32 +9,32 @@ File: Main Css File
 */
 @font-face {
   font-family: "Cerebri Sans,sans-serif";
-  src: url("/assets/fonts/cerebrisans-light.eot");
-  src: local("Cerebri-sans Light"), url("/assets/fonts/cerebrisans-light.woff") format("woff");
+  src: url("/public/assets/fonts/cerebrisans-light.eot");
+  src: local("Cerebri-sans Light"), url("/public/assets/fonts/cerebrisans-light.woff") format("woff");
   font-weight: 300;
 }
 @font-face {
   font-family: "Cerebri Sans,sans-serif";
-  src: url("/assets/fonts/cerebrisans-regular.eot");
-  src: local("Cerebri-sans Regular"), url("/assets/fonts/cerebrisans-regular.woff") format("woff");
+  src: url("/public/assets/fonts/cerebrisans-regular.eot");
+  src: local("Cerebri-sans Regular"), url("/public/assets/fonts/cerebrisans-regular.woff") format("woff");
   font-weight: 400;
 }
 @font-face {
   font-family: "Cerebri Sans,sans-serif";
-  src: url("/assets/fonts/cerebrisans-medium.eot");
-  src: local("Cerebri-sans Medium"), url("/assets/fonts/cerebrisans-medium.woff") format("woff");
+  src: url("/public/assets/fonts/cerebrisans-medium.eot");
+  src: local("Cerebri-sans Medium"), url("/public/assets/fonts/cerebrisans-medium.woff") format("woff");
   font-weight: 500;
 }
 @font-face {
   font-family: "Cerebri Sans,sans-serif";
-  src: url("/assets/fonts/cerebrisans-semibold.eot");
-  src: local("Cerebri-sans Semibold"), url("/assets/fonts/cerebrisans-semibold.woff") format("woff");
+  src: url("/public/assets/fonts/cerebrisans-semibold.eot");
+  src: local("Cerebri-sans Semibold"), url("/public/assets/fonts/cerebrisans-semibold.woff") format("woff");
   font-weight: 600;
 }
 @font-face {
   font-family: "Cerebri Sans,sans-serif";
-  src: url("/assets/fonts/cerebrisans-bold.eot");
-  src: local("Cerebri-sans Bold"), url("/assets/fonts/cerebrisans-bold.woff") format("woff");
+  src: url("/public/assets/fonts/cerebrisans-bold.eot");
+  src: local("Cerebri-sans Bold"), url("/public/assets/fonts/cerebrisans-bold.woff") format("woff");
   font-weight: 700;
 }
 html {
@@ -2567,7 +2567,7 @@ body {
 }
 
 .bg-pattern {
-  background-image: url("/assets/images/bg-pattern-2.png");
+  background-image: url("/public/assets/images/bg-pattern-2.png");
   background-size: cover;
 }
 
@@ -2578,7 +2578,7 @@ body.authentication-bg {
 }
 
 body.authentication-bg-pattern {
-  background-image: url("/assets/images/bg-pattern.png");
+  background-image: url("/public/assets/images/bg-pattern.png");
 }
 
 .logout-icon {
@@ -2592,7 +2592,7 @@ body.authentication-bg-pattern {
   min-height: 100vh;
   flex-direction: row;
   align-items: stretch;
-  background: url("/assets/images/bg-auth.jpg") center;
+  background: url("/public/assets/images/bg-auth.jpg") center;
   background-size: cover;
 }
 .auth-fluid .auth-fluid-form-box {
@@ -3675,10 +3675,10 @@ body.authentication-bg-pattern {
 }
 /*!
  * Waves v0.7.6
- * http://fian.my.id/Waves 
- * 
- * Copyright 2014-2018 Alfiana E. Sibuea and other contributors 
- * Released under the MIT license 
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014-2018 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
  * https://github.com/fians/Waves/blob/master/LICENSE */
 .waves-effect {
   position: relative;
@@ -5712,15 +5712,15 @@ div.hopscotch-bubble .hopscotch-content {
 
 @font-face {
   font-family: "footable";
-  src: url("/assets/fonts/footable.eot");
-  src: url("/assets/fonts/footable.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/footable.woff") format("woff"), url("/assets/fonts/footable.ttf") format("truetype"), url("/assets/fonts/footable.svg#footable") format("svg");
+  src: url("/public/assets/fonts/footable.eot");
+  src: url("/public/assets/fonts/footable.eot?#iefix") format("embedded-opentype"), url("/public/assets/fonts/footable.woff") format("woff"), url("/public/assets/fonts/footable.ttf") format("truetype"), url("/public/assets/fonts/footable.svg#footable") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "footable";
-    src: url("/assets/fonts/footable.svg#footable") format("svg");
+    src: url("/public/assets/fonts/footable.svg#footable") format("svg");
     font-weight: normal;
     font-style: normal;
   }
@@ -6185,7 +6185,7 @@ table[data-toggle=table] {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-image: url("/assets/images/jsgrid.png");
+  background-image: url("/public/assets/images/jsgrid.png");
   background-color: #36404a;
   outline: none !important;
 }
@@ -6207,7 +6207,7 @@ table[data-toggle=table] {
 }
 
 .ms-container {
-  background: transparent url("/assets/images/multiple-arrow.png") no-repeat 50% 50%;
+  background: transparent url("/public/assets/images/multiple-arrow.png") no-repeat 50% 50%;
   width: auto;
   max-width: 370px;
 }
@@ -6489,8 +6489,8 @@ span.flatpickr-weekday,
   font-family: "summernote";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/fonts/summernote.eot");
-  src: url("/assets/fonts/summernote.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/summernote.woff?") format("woff"), url("/assets/fonts/summernote.ttf?") format("truetype");
+  src: url("/public/assets/fonts/summernote.eot");
+  src: url("/public/assets/fonts/summernote.eot?#iefix") format("embedded-opentype"), url("/public/assets/fonts/summernote.woff?") format("woff"), url("/public/assets/fonts/summernote.ttf?") format("truetype");
 }
 .note-editor.note-frame {
   border: 1px solid #424e5a;
@@ -6630,8 +6630,8 @@ span.flatpickr-weekday,
 
 @font-face {
   font-family: "dropify";
-  src: url("/assets/fonts/dropify.eot");
-  src: url("/assets/fonts/dropify.eot#iefix") format("embedded-opentype"), url("/assets/fonts/dropify.woff") format("woff"), url("/assets/fonts/dropify.ttf") format("truetype"), url("/assets/fonts/dropify.svg#dropify") format("svg");
+  src: url("/public/assets/fonts/dropify.eot");
+  src: url("/public/assets/fonts/dropify.eot#iefix") format("embedded-opentype"), url("/public/assets/fonts/dropify.woff") format("woff"), url("/public/assets/fonts/dropify.ttf") format("truetype"), url("/public/assets/fonts/dropify.svg#dropify") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -6649,11 +6649,11 @@ span.flatpickr-weekday,
 }
 
 .editable-clear-x {
-  background: url("/assets/images/clear.png") center center no-repeat;
+  background: url("/public/assets/images/clear.png") center center no-repeat;
 }
 
 .editableform-loading {
-  background: url("/assets/images/loading.gif") center center no-repeat;
+  background: url("/public/assets/images/loading.gif") center center no-repeat;
 }
 
 .editable-checklist label {

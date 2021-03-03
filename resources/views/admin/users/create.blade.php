@@ -2,12 +2,12 @@
 
 @section('css')
     <!-- Plugins css -->
-    <link href="{{asset('assets/libs/mohithg-switchery/mohithg-switchery.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/libs/multiselect/multiselect.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/libs/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/libs/selectize/selectize.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/libs/bootstrap-select/bootstrap-select.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/libs/bootstrap-touchspin/bootstrap-touchspin.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('public/assets/libs/mohithg-switchery/mohithg-switchery.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('public/assets/libs/multiselect/multiselect.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('public/assets/libs/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('public/assets/libs/selectize/selectize.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('public/assets/libs/bootstrap-select/bootstrap-select.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('public/assets/libs/bootstrap-touchspin/bootstrap-touchspin.min.css')}}" rel="stylesheet" type="text/css" />
 @endsection
 
 @section('content')
@@ -118,18 +118,18 @@
 
 @section('script')
     <!-- Plugins js-->
-    <script src="{{asset('assets/libs/parsleyjs/parsleyjs.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/parsleyjs/parsleyjs.min.js')}}"></script>
     <!-- Plugins js-->
-    <script src="{{asset('assets/libs/selectize/selectize.min.js')}}"></script>
-    <script src="{{asset('assets/libs/mohithg-switchery/mohithg-switchery.min.js')}}"></script>
-    <script src="{{asset('assets/libs/multiselect/multiselect.min.js')}}"></script>
-    <script src="{{asset('assets/libs/select2/select2.min.js')}}"></script>
-    <script src="{{asset('assets/libs/bootstrap-select/bootstrap-select.min.js')}}"></script>
-    <script src="{{asset('assets/libs/bootstrap-touchspin/bootstrap-touchspin.min.js')}}"></script>
-    <script src="{{asset('assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js')}}"></script>
-    <script src="{{asset('assets/libs/devbridge-autocomplete/devbridge-autocomplete.min.js')}}"></script>
-    <script src="{{asset('assets/libs/jquery-mockjax/jquery-mockjax.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/selectize/selectize.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/mohithg-switchery/mohithg-switchery.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/multiselect/multiselect.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/select2/select2.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/bootstrap-select/bootstrap-select.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/bootstrap-touchspin/bootstrap-touchspin.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/devbridge-autocomplete/devbridge-autocomplete.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/jquery-mockjax/jquery-mockjax.min.js')}}"></script>
 
     <!-- Page js-->
-    <script src="{{asset('assets/js/pages/form-advanced.init.js')}}"></script>
+    <script src="{{asset('public/assets/js/pages/form-advanced.init.js')}}"></script>
 @endsection
