@@ -18,7 +18,7 @@
                     <div class="text-center">
                         <h2>
                             <a href="{{route('index')}}">
-                                <img src="{{asset('assets/images/logo-light.png')}}" alt="main-logo" height="24" />
+                                <img src="{{asset('public/assets/images/logo-light.png')}}" alt="main-logo" height="24" />
                             </a>
                         </h2>
 
@@ -96,10 +96,10 @@
     @include('layouts.shared.footer-script')
 
     <!-- Plugins js-->
-    <script src="{{asset('assets/libs/jquery-countdown/jquery-countdown.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/jquery-countdown/jquery-countdown.min.js')}}"></script>
 
     <!-- Page js-->
-    <script src="{{asset('assets/js/pages/coming-soon.init.js')}}"></script>
+    <script src="{{asset('public/assets/js/pages/coming-soon.init.js')}}"></script>
 </body>
 
 </html>

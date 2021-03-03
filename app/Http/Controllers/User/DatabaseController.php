@@ -88,8 +88,9 @@ class DatabaseController extends Controller
         ]);
         $validated = Arr::prepend($validated, Auth::user()->id, 'user_id');
         $mysql = @new mysqli(
-            $validated['host_name'], $validated['user_name'], '', $validated['database_name']
+            $validated['host_name'], $validated['user_name'], $request['password'], $validated['database_name']
         );
+
         $this->check_db($mysql);
         $tables = $this->check_tbl($mysql, $validated['table_prefix']);
         try {

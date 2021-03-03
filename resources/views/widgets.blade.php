@@ -2,7 +2,7 @@
 
 @section('css')
     <!-- Plugins css -->
-    <link href="{{asset('assets/libs/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('public/assets/libs/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css" />
 
 @endsection
 
@@ -373,7 +373,7 @@
                     <div class="row align-items-center">
                         <div class="col-auto">
                             <div class="avatar-lg">
-                                <img src="{{asset('assets/images/users/user-3.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
+                                <img src="{{asset('public/assets/images/users/user-3.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
                             </div>
                         </div>
                         <div class="col">
@@ -389,7 +389,7 @@
                     <div class="row align-items-center">
                         <div class="col-auto">
                             <div class="avatar-lg">
-                                <img src="{{asset('assets/images/users/user-4.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
+                                <img src="{{asset('public/assets/images/users/user-4.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
                             </div>
                         </div>
                         <div class="col">
@@ -405,7 +405,7 @@
                     <div class="row align-items-center">
                         <div class="col-auto">
                             <div class="avatar-lg">
-                                <img src="{{asset('assets/images/users/user-5.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
+                                <img src="{{asset('public/assets/images/users/user-5.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
                             </div>
                         </div>
                         <div class="col">
@@ -421,7 +421,7 @@
                     <div class="row align-items-center">
                         <div class="col-auto">
                             <div class="avatar-lg">
-                                <img src="{{asset('assets/images/users/user-6.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
+                                <img src="{{asset('public/assets/images/users/user-6.jpg')}}" class="img-fluid rounded-circle" alt="user-img" />
                             </div>
                         </div>
                         <div class="col">
@@ -461,7 +461,7 @@
 
                         <div class="inbox-widget" data-simplebar style="max-height: 407px;">
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-2.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-2.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Tomaslau</p>
                                 <p class="inbox-item-text">I've finished it! See you so...</p>
                                 <p class="inbox-item-date">
@@ -469,7 +469,7 @@
                                 </p>
                             </div>
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-3.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-3.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Stillnotdavid</p>
                                 <p class="inbox-item-text">This theme is awesome!</p>
                                 <p class="inbox-item-date">
@@ -477,7 +477,7 @@
                                 </p>
                             </div>
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-4.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-4.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Kurafire</p>
                                 <p class="inbox-item-text">Nice to meet you</p>
                                 <p class="inbox-item-date">
@@ -486,7 +486,7 @@
                             </div>
 
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-5.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-5.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Shahedk</p>
                                 <p class="inbox-item-text">Hey! there I'm available...</p>
                                 <p class="inbox-item-date">
@@ -494,7 +494,7 @@
                                 </p>
                             </div>
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-6.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-6.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Adhamdannaway</p>
                                 <p class="inbox-item-text">This theme is awesome!</p>
                                 <p class="inbox-item-date">
@@ -503,7 +503,7 @@
                             </div>
 
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-3.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-3.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Stillnotdavid</p>
                                 <p class="inbox-item-text">This theme is awesome!</p>
                                 <p class="inbox-item-date">
@@ -511,7 +511,7 @@
                                 </p>
                             </div>
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="{{asset('assets/images/users/user-4.jpg')}}" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img"><img src="{{asset('public/assets/images/users/user-4.jpg')}}" class="rounded-circle" alt=""></div>
                                 <p class="inbox-item-author">Kurafire</p>
                                 <p class="inbox-item-text">Nice to meet you</p>
                                 <p class="inbox-item-date">
@@ -545,7 +545,7 @@
                                 <ul class="conversation-list">
                                     <li class="clearfix">
                                         <div class="chat-avatar">
-                                            <img src="{{asset('assets/images/users/user-5.jpg')}}" alt="male">
+                                            <img src="{{asset('public/assets/images/users/user-5.jpg')}}" alt="male">
                                             <i>10:00</i>
                                         </div>
                                         <div class="conversation-text">
@@ -559,7 +559,7 @@
                                     </li>
                                     <li class="clearfix odd">
                                         <div class="chat-avatar">
-                                            <img src="{{asset('assets/images/users/user-1.jpg')}}" alt="Female">
+                                            <img src="{{asset('public/assets/images/users/user-1.jpg')}}" alt="Female">
                                             <i>10:01</i>
                                         </div>
                                         <div class="conversation-text">
@@ -573,7 +573,7 @@
                                     </li>
                                     <li class="clearfix">
                                         <div class="chat-avatar">
-                                            <img src="{{asset('assets/images/users/user-5.jpg')}}" alt="male">
+                                            <img src="{{asset('public/assets/images/users/user-5.jpg')}}" alt="male">
                                             <i>10:01</i>
                                         </div>
                                         <div class="conversation-text">
@@ -587,7 +587,7 @@
                                     </li>
                                     <li class="clearfix odd">
                                         <div class="chat-avatar">
-                                            <img src="{{asset('assets/images/users/user-1.jpg')}}" alt="male">
+                                            <img src="{{asset('public/assets/images/users/user-1.jpg')}}" alt="male">
                                             <i>10:02</i>
                                         </div>
                                         <div class="conversation-text">
@@ -950,15 +950,15 @@
 
 @section('script')
     <!-- Plugins js-->
-    <script src="{{asset('assets/libs/peity/peity.min.js')}}"></script>
-    <script src="{{asset('assets/libs/jquery-knob/jquery-knob.min.js')}}"></script>
-    <script src="{{asset('assets/libs/jquery-sparkline/jquery-sparkline.min.js')}}"></script>
-    <script src="{{asset('assets/libs/moment/moment.min.js')}}"></script>
-    <script src="{{asset('assets/libs/jquery.scrollto/jquery.scrollto.min.js')}}"></script>
-    <script src="{{asset('assets/libs/sweetalert2/sweetalert2.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/peity/peity.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/jquery-knob/jquery-knob.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/jquery-sparkline/jquery-sparkline.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/moment/moment.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/jquery.scrollto/jquery.scrollto.min.js')}}"></script>
+    <script src="{{asset('public/assets/libs/sweetalert2/sweetalert2.min.js')}}"></script>
 
     <!-- Page js-->
-    <script src="{{asset('assets/js/pages/jquery.chat.js')}}"></script>
-    <script src="{{asset('assets/js/pages/jquery.todo.js')}}"></script>
-    <script src="{{asset('assets/js/pages/widgets.init.js')}}"></script>
+    <script src="{{asset('public/assets/js/pages/jquery.chat.js')}}"></script>
+    <script src="{{asset('public/assets/js/pages/jquery.todo.js')}}"></script>
+    <script src="{{asset('public/assets/js/pages/widgets.init.js')}}"></script>
 @endsection
