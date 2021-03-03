@@ -38,7 +38,8 @@ class DatabaseController extends Controller
                 })
                 ->addColumn('name_email', function($row){
                     $elements =explode("/", $row['name_email']);
-                    $btn = $elements[0]."<br>".$elements[1];
+                    $count = count($elements);
+                    $btn = $count ==2 ? $elements[0]."<br>".$elements[1] : $elements[0];
                     return utf8_encode($btn);
                 })
                 ->addColumn('status', function($row){

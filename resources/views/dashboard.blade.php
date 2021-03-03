@@ -107,16 +107,16 @@
                 'type': "GET"
             },
             'columns':[
-                {data: 'check_box', orderable: false, searchable: false},
-                {data: 'order_id'},
-                {data: 'order_number'},
-                {data: 'name_email'},
-                {data: 'payment_method'},
-                {data: 'shipment'},
-                {data: 'order_date'},
-                {data: 'last_modified'},
-                {data: 'status'},
-                {data: 'total'},
+                {data: 'check_box', name:'check_box',  orderable: false, searchable: false},
+                {data: 'order_id', name: 'order_id'},
+                {data: 'order_number', name: 'order_number'},
+                {data: 'name_email', name: 'name_email'},
+                {data: 'payment_method', name: 'payment_method'},
+                {data: 'shipment', name: 'shipment'},
+                {data: 'order_date', name: 'order_date'},
+                {data: 'last_modified', name: 'last_modified'},
+                {data: 'status', name: 'status'},
+                {data: 'total', name: 'total'},
             ],
         });
         $(document).ready(function () {
