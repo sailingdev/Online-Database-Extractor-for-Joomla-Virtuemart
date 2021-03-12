@@ -55,6 +55,7 @@ class PrinterController extends Controller
             ' LEFT JOIN '.$tbls['states'].
             ' ON ' .$tbls['states'].'.`virtuemart_state_id` = '.$tbls['userinfos'].'.`virtuemart_state_id`'.
             ' WHERE '.$tbls['orders'].'.`virtuemart_order_id` IN ('.$ids.')'.
+            ' GROUP BY '.$tbls['orders'].'.`virtuemart_order_id`';
             ' ORDER BY '.$tbls['orders'].'.`virtuemart_order_id`';
         $data = [];
         if ($result = $db->query($query)) {
