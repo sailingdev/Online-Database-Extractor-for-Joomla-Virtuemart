@@ -204,6 +204,7 @@ class DatabaseController extends Controller
                     ' ON '.$tbls['shipment'].'.`virtuemart_shipmentmethod_id` =  '.$tbls['orders'].'.`virtuemart_shipmentmethod_id` '.
                     'LEFT JOIN '.$tbls['orderstates'].
                     ' ON '.$tbls['orderstates'].'.`order_status_code` = '.$tbls['orders'].'.`order_status` '.
+                    'GROUP BY '.$tbls['orders'].'.`virtuemart_order_id` ';
                     'ORDER BY  '.$tbls['orders'].'.`virtuemart_order_id` ';
         $data = [];
         if ($result = $db->query($query)){
